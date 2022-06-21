@@ -15,6 +15,10 @@
 
 **Pouvoir** 是基于 **TabooLib VI** 编写的一款多线程脚本插件
 
-## 支持
+## Links
 
-如果你觉得插件不错，你可以通过 [**爱发电**](https://afdian.net/@glom_) 进行支持，承诺随机物品插件主体永不收费
+JavaDoc [http://book.skillw.com/pouvoir/doc/](http://book.skillw.com/pouvoir/doc/)
+
+MCBBS [https://www.mcbbs.net/thread-1221977-1-1.html](https://www.mcbbs.net/thread-1221977-1-1.html)
+
+爱发电 [https://afdian.net/@glom\_](https://afdian.net/@glom_)
