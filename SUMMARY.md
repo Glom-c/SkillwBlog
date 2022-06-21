@@ -1,4 +1,4 @@
-- [Pouovir](pouovir)
+- [Pouovir](pouvoir)
 - [AttributeSystem](sort2)
 - [RandomItem](sort3)
 - [日记](sort4)
