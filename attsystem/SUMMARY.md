@@ -13,6 +13,6 @@
   - [伤害类型](战斗系统/DamageType.md)
   - [战斗机制组](战斗系统/Fight.md)
 - **其它**
-  - [占位符](其它/Placeholder.md)
+  - [占位符](其它/PlaceHolder.md)
   - [MythicMobs](其它/MythicMobs.md)
   - [AP 附属兼容](其它/APDepend.md)
