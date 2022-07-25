@@ -1,14 +1,16 @@
 ![icon](./images/icon.png)
 
-##### **全自定义式**的**属性系统**及**战斗系统**
+##### **客制化** **属性引擎** **战斗系统**
 
 ## 提前说一下
 
 每篇教程都会附带一个例子，方便大家理解。
 
-本教程同样会在这里发布 ↓
-Glom's Blog [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)
+## Links
 
-MCBBS [https://www.mcbbs.net/forum.php?mod=viewthread&tid=1307249](https://www.mcbbs.net/forum.php?mod=viewthread&tid=1307249)
-
-JavaDoc [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
+**WIKI** [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)
+**FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)
+**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
+**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
+**MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)
+**爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)
