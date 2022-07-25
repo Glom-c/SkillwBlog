@@ -45,7 +45,7 @@ val value = readGroup.placeholder("占位符ID",attribute,status,livingEntity)
 
 ## 声明(ReadGroup -> 用户)
 
-于 **plugins/Attributes/read** 文件夹下任意一个**YAML文件**中声明
+于 **plugins/AttributeSystem/read** 文件夹下任意一个**YAML文件**中声明
 
 ```yaml
 Default:
