@@ -1,6 +1,7 @@
 ## AttributeSystem
 
-- [主页](README.md)
+- [前言](README.md)
+- [主页](Main.md)
 - **属性**
   - [属性](属性/Attribute.md)
   - [读取格式](属性/ReadPattern.md)
@@ -16,3 +17,4 @@
   - [占位符](其它/PlaceHolder.md)
   - [MythicMobs](其它/MythicMobs.md)
   - [AP 附属兼容](其它/APDepend.md)
+- [更新记录](UPDATE.MD)
