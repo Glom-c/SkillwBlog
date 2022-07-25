@@ -17,4 +17,5 @@
   - [占位符](其它/PlaceHolder.md)
   - [MythicMobs](其它/MythicMobs.md)
   - [AP 附属兼容](其它/APDepend.md)
+- [FAQ](FAQ.md)
 - [更新记录](UPDATE.MD)
