@@ -8,9 +8,15 @@
 
 ## Links
 
-**WIKI** [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)
-**FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)
-**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
-**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
-**MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)
-**爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)
+**WIKI** [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)  
+
+**FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)  
+
+**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)  
+
+**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)  
+
+**MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)  
+
+**爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)  
+
