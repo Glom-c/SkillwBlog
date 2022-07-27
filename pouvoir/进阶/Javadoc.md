@@ -26,7 +26,7 @@ Javadoc 是协助开发人员开发的帮助文档，你可以从中看到**类*
 
 让我们点开 [https://bukkit.windit.net/javadoc/](https://bukkit.windit.net/javadoc/)
 
-![javadoc_index.jpg](images\javadoc_index.jpg)
+![javadoc_index.jpg](images/javadoc_index.jpg)
 
 点开上方的 **帮助**
 

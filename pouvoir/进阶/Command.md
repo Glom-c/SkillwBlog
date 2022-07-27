@@ -42,7 +42,7 @@ function test() {
 
 玩家:
 
-![player](images/player_command.jpg)
+![player](images/player_command.gif)
 
 ## 附
 
