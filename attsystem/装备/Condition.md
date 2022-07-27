@@ -8,29 +8,29 @@
 
 #### 单行
 
-> 这里的 / 与 , 均可在config中配置
+> 这里的 / 与 , 均可在 config 中配置
 
 > 攻击力: 100/Lv.10,职业限制: 战士
 
-若实体等级未到10 或 职业不是战士
+若实体等级未到 10 或 职业不是战士
 
 就不会读取**此行**属性
 
 #### 多行
 
 > Lv.100
-> 
+>
 > 攻击力: 100
-> 
+>
 > 生命值: 1000
 
-若实体等级未到100
+若实体等级未到 100
 
 就不会读取**这些**属性
 
 ## 声明(用户)
 
-于 **plugins/Attributes/conditions** 文件夹下任意一个**YAML文件**中声明
+于 **plugins/Attributes/conditions** 文件夹下任意一个**YAML 文件**中声明
 
 ```yaml
 #id
@@ -47,20 +47,20 @@ test-level:
   #含义:          实体                      本行文本             名称
   #返回值为 Boolean ， 是否读取此行属性
   #condition中的level函数
-  script: 'condition.js::level'
+  script: "condition.js::level"
 ```
 
 > AttributeSystem/scripts/condition.js
 
 ```javascript
 function level() {
-    var hasEntity = entity != "null"
-    if (!hasEntity) return true
-    if (!(entity instanceof Player)) {
-        return true
-    }
-    var level = Coerce.toInteger(matcher.group("value"))
-    return entity.level >= level
+  var hasEntity = entity != "null";
+  if (!hasEntity) return true;
+  if (!(entity instanceof Player)) {
+    return true;
+  }
+  var level = Coerce.toInteger(matcher.group("value"));
+  return entity.level >= level;
 }
 ```
 
@@ -87,7 +87,7 @@ def clazz() {
 }
 ```
 
-通过注解注册 js同理
+通过注解注册 js 同理
 
 ### Java/Kotlin
 
@@ -103,4 +103,12 @@ object : Condition("test",setOf("Test: <?value.*>"),Condition.ConditionType.ALL)
 }.register()
 ```
 
-Java同理
+Java 同理
+
+个人博客: [url=https://www.mcbbs.net/plugin.php?id=link_redirect&target=http%3A%2F%2Fblog.skillw.com%2F]http://blog.skillw.com/[/url]
+[font=微软雅黑][color=black]G[/color][/font][font=微软雅黑][color=black]lom 的插件交流群: [url=https://qm.qq.com/cgi-bin/qm/qr?k=s6F_zSCQPUAZ643h440K6dicB3bLuZ0-&jump_from=webapi][font=微软雅黑][color=Black][color=purple][b]470746324[/b][/color][/color][/font][/url][/color][/font]
+
+[b][color=indigo]Pouvoir[/color] [/b][url=https://www.mcbbs.net/thread-1221977-1-1.html][b][color=green]->点我<-[/color][/b][/url]
+[b][color=blue]AttributeSystem[/color][/b] [url=https://www.mcbbs.net/thread-1307249-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
+[b][color=navy]RandomItem[/color][/b] [url=https://www.mcbbs.net/thread-1156871-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
+[img]https://s2.loli.net/2022/07/26/BNtuWizgqjVxPoD.jpg[/img]
