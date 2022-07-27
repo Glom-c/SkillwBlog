@@ -60,7 +60,7 @@ function isNum(numStr) {
 
 ## Packages
 
-`Packages` 是一个顶级属性，用来导入**非 jdk 类/包**
+`Packages` 是一个顶级属性，用来导入**类/包**
 
 ```javascript
 var Coere = Package.com.pouvoir.taboolib.common5.Coere;
@@ -71,7 +71,7 @@ function isNum(numStr) {
 
 ## java
 
-`java` 一般用来导入**jdk 类/包**
+`java` 一般用来导入**类/包**
 
 ```javascript
 var ArrayList = java.util.ArrayList;
@@ -80,7 +80,7 @@ function newList() {
 }
 ```
 
-不光是 `java`，只要是路径以 `com`, `edu`, `java`, `javax`, 和 `org` 开头的的 jdk 类都支持
+不光是 `java`，只要是路径以 `com`, `edu`, `java`, `javax`, 和 `org` 开头的的类都支持
 
 以上两种方法是**Nashorn**提供的，很直观，但是有缺点：
 
