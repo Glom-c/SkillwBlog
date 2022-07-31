@@ -188,3 +188,12 @@ Map 工具类
 用户体验
 
 ##### 回退 TLib6 至 6.0.9-35
+
+## 1.4.1-fix-2022 年 7 月 31 日:
+
+## 兼容全息
+
+Adyeshach
+DecentHolograms
+
+##### 如果你的服务器不支持 Pouvoir 原生的全息，请安装 Adyeshach 或 DecentHolograms
