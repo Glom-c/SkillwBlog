@@ -166,3 +166,15 @@ ItemNBTReadEvent
 'options.fight.damage-any-time' 不奏效
 生命恢复时报错
 MM 怪属性重载时刷新
+
+## 1.3.2 2022 年 7 月 31 日
+
+### 新增
+
+不同权限攻击触发不同战斗组
+指令 info 查看插件信息
+指令 disable 用于卸载插件
+
+### 优化
+
+用户体验

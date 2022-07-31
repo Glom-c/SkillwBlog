@@ -170,3 +170,21 @@ FunctionManager 已更名为 InlineFunctionManger
 
 1.18
 支持 Nashorn 中顶级函数调用时参数中 js 函数转 Kotlin 的 Function
+
+## 1.4.1-2022 年 7 月 31 日:
+
+### 重构
+
+脚本调用系统
+Map 工具类
+
+### 支持
+
+高并发调用脚本
+可取消式脚本任务
+
+### 优化
+
+用户体验
+
+##### 回退 TLib6 至 6.0.9-35

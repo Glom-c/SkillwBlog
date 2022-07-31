@@ -31,6 +31,8 @@ function test() {
 
   //定义命令后还需要注册
   Tool.regCommand(command);
+  //注意一下，如果你是Spigot用户, 这里需要同步注册指令
+  //task(function(){Tool.regCommand(command);})
 }
 ```
 

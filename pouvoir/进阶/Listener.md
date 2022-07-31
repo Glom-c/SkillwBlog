@@ -24,33 +24,11 @@ BukkitAPI 给了一些基本的服务器事件. 大多数情况下可以满足�
 这里我们设定玩家“只要右键空气就可以登录”.
 
 ```javascript
-//@Awake(Enable)
-function onEnable() {
-  //Data是个即时数据Map 这是没登录玩家集合
-  Data.put("playerNameList", new java.util.HashSet());
-  regMoveEvent();
-}
-
-//因为每次执行完脚本后顶级变量不会存储在内存中，
-//所以要手动存取
-var playerNameList = Data.get("playerNameList");
-
-function regMoveEvent() {
-  /* 功能二：没登录的玩家不让移动 */
-  //因为PlayerMoveEvent会高频触发，所以要以这种方式注册以提高性能
-  Tool.addListener(
-    "move" /*监听器key，可以凭此注销 */,
-    "org.bukkit.event.player.PlayerMoveEvent" /*监听事件的类路径 */,
-    "NORMAL" /*优先级*/,
-    true /*是否忽略取消了的事件*/,
-    //处理事件
-    function (event) {
-      //玩家移动时Bukkit就会调用这个函数
-      if (playerNameList.contains(event.player.name)) {
-        event.setCancelled(true); //判断玩家是不是没登录, 是则取消事件
-      }
-    }
-  );
+//@Awake(Reload)
+function onReload() {
+  if (typeof this.playerNameList == "undefined") {
+    this.playerNameList = new java.util.HashSet();
+  }
 }
 
 /* 功能一：刚进入服务器的玩家都记录到“小本本”playerNameList上，他们是没登录的玩家 */
@@ -64,6 +42,14 @@ function onPlayerJoin(event) {
   }
 }
 
+/* 功能二：没登录的玩家不让移动 */
+//@Listener(-event org.bukkit.event.player.PlayerMoveEvent)
+function onPlayerMove(event) {
+  //玩家移动时Bukkit就会调用这个函数
+  if (playerNameList.contains(event.player.name)) {
+    event.setCancelled(true); //判断玩家是不是没登录, 是则取消事件
+  }
+}
 /* 功能三：没登录的玩家禁言 */
 //                                                                调优先级
 //@Listener(-event org.bukkit.event.player.AsyncPlayerChatEvent)

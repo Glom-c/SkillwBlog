@@ -2,12 +2,30 @@
 
 ###### 部分[https://www.runoob.com/js/js-tutorial.html](https://www.runoob.com/js/js-tutorial.html)摘录，如有错误欢迎指正。
 
+###### 如果你有 JavaScript 基础，可以跳过本章，开始 "进阶" 的学习
+
 # 第一个变量
+
+在 `JavaScript`中创建变量被称为“声明”变量。
+您可以通过 `var` 关键词来声明 `JavaScript` 变量：
 
 ```javascript
 //变量声明方式
-var a = "Hello World!";
-// 变量名    数据
+var a;
+```
+
+声明之后，变量是没有值的。（实际上上，它的值是 undefined。）
+
+如需赋值给变量，需要使用等号：
+
+```javascript
+a = "Hello Wolrd!";
+```
+
+你可以在声明变量时向它赋值：
+
+```javascript
+var a = "Hello Wolrd!";
 ```
 
 这便是你的第一个变量了，它是用来存放数据的容器。
@@ -61,6 +79,35 @@ var a = "Hello World!";
 - 保留字（比如 JavaScript 的关键词）无法用作变量名称
 
 > JavaScript 语句和 JavaScript 变量都对大小写敏感。
+
+## 综上所述
+
+可以通过以下方法判断一个变量是否被赋值：
+
+```javascript
+//注意 只声明不赋值
+var a;
+
+function a() {
+  if (typeof a == "undefined") {
+    //如没有则赋值
+    a = "Hello Wolrd!";
+  }
+}
+```
+
+你也可以省略声明.
+
+```javascript
+function a() {
+  if (typeof a == "undefined") {
+    //如没有则赋值
+    a = "Hello Wolrd!";
+  }
+}
+```
+
+在`Pouvoir`中，以上方式可以用来声明全局变量
 
 ## 数据类型
 
