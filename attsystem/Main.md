@@ -2,15 +2,15 @@
 
 ##### **全自定义式**的**属性系统**及**战斗系统**
 
-***
+---
 
 ## 插件
 
-|说明|内容|
-|--|--|
-|兼容版本|1.12.2+|
-|硬依赖|Pouvoir|
-|软依赖|PlaceholderAPI Mythicmobs SkillAPI|
+| 说明     | 内容                               |
+| -------- | ---------------------------------- |
+| 兼容版本 | 1.9+                               |
+| 硬依赖   | Pouvoir                            |
+| 软依赖   | PlaceholderAPI Mythicmobs SkillAPI |
 
 ## 介绍
 
@@ -18,7 +18,7 @@
 
 #### **简易&客制化**
 
- 你可以仅通过**YAML**配置:
+你可以仅通过**YAML**配置:
 
 - 注册**属性**
 - 注册**属性读取组**
@@ -30,7 +30,7 @@
 - 自定义**玩家/实体槽位**及**条件**
 - 自定义**消息提示类型及文本**
 
-> AttributeSytem的伤害公式支持  (普攻/SKAPI/MM技能/Planners)
+> AttributeSytem 的伤害公式支持 (普攻/SKAPI/MM 技能/Planners)
 
 #### **面向函数**
 
@@ -48,4 +48,20 @@
 
 ## 支持
 
-如果你觉得插件不错，你可以通过 [**爱发电**](https://afdian.net/@glom_) 进行支持
+如果你觉得插件不错，可以通过 [**爱发电**](https://afdian.net/@glom_) 进行支持
+
+实在有不理解的请在 qq 交流群里提问: 470746324
+
+## Links
+
+**WIKI** [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)
+
+**FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)
+
+**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
+
+**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
+
+**MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)
+
+**爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)

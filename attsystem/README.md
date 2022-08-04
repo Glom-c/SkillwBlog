@@ -6,17 +6,18 @@
 
 每篇教程都会附带一个例子，方便大家理解。
 
+实在有不理解的请在 qq 交流群里提问: 470746324
+
 ## Links
 
-**WIKI** [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)  
+**WIKI** [http://blog.skillw.com/#sort=attsystem&doc=README.md](http://blog.skillw.com/#sort=attsystem&doc=README.md)
 
-**FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)  
+**FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)
 
-**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)  
+**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
 
-**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)  
+**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
 
-**MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)  
+**MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)
 
-**爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)  
-
+**爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)

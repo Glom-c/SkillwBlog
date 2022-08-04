@@ -197,3 +197,12 @@ Adyeshach
 DecentHolograms
 
 ##### 如果你的服务器不支持 Pouvoir 原生的全息，请安装 Adyeshach 或 DecentHolograms
+
+## 1.4.2-2022 年 8 月 4 日:
+
+## 重构
+字符串内嵌函数
+现在旧的和新的函数系统都支持
+
+## 修复
+EntityRayHit 算法

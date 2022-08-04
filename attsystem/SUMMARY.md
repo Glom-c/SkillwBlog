@@ -1,21 +1,50 @@
 ## AttributeSystem
 
-- [前言](README.md)
+- [介绍](README.md)
 - [主页](Main.md)
-- **属性**
-  - [属性](属性/Attribute.md)
-  - [读取格式](属性/ReadPattern.md)
-  - [属性实现](属性/Realise.md)
-- **装备**
-  - [条件](装备/Condition.md)
-  - [槽位](装备/Slot.md)
+- **属性引擎**
+  - **属性**
+    - [属性](属性/属性/Attribute.md)
+  - **读取组**
+    - [读取组](属性/读取组/ReadGroup.md)
+    - [捕获组](属性/读取组/Matcher.md)
+    - [运算操作](属性/读取组/Operation.md)
+  - **属性数据**
+    - [属性数据](属性/属性数据/AttributeData.md)
+    - [字符串](属性/属性数据/StrData.md)
+    - [NBT](属性/属性数据/NBTData.md)
+  - **属性功能**
+    - [属性功能](属性/Realize.md)
+- **装备栏系统**
+  - [装备栏](装备/Equipment.md)
+  - **条件**
+    - [条件](装备/条件/Condition.md)
+    - **写法**
+      - [单行条件](装备/条件/LineCondition.md)
+      - [多行条件](装备/条件/StrsCondition.md)
+    - **用法**
+      - [字符串条件](装备/条件/StrCondition.md)
+      - [NBT 条件](装备/条件/NBTCondition.md)
 - **战斗系统**
-  - [机制](战斗系统/Mechanic.md)
   - [伤害类型](战斗系统/DamageType.md)
   - [战斗机制组](战斗系统/Fight.md)
+  - [机制](战斗系统/Mechanic.md)
+  - **战斗数据**
+    - [战斗数据](战斗系统/战斗数据/FightData.md)
+    - [调用原则](战斗系统/战斗数据/Principle.md)
 - **其它**
   - [占位符](其它/PlaceHolder.md)
   - [MythicMobs](其它/MythicMobs.md)
-  - [AP 附属兼容](其它/APDepend.md)
+- **开发者**
+  - **基本用法**
+    - [基本操作](开发/Basic.md)
+  - **拓展**
+    - [属性](开发/拓展/ExportAtt.md)
+    - [读取格式](开发/拓展/ReadPattern.md)
+    - [条件](开发/拓展/Condition.md)
+    - [槽位](开发/拓展/Slot.md)
+    - [机制](开发/拓展/Mechanic.md)
+    - [触发战斗机制组](开发/拓展/Fight.md)
+    - [自定义战斗信息](开发/拓展/Message.md)
 - [FAQ](FAQ.md)
 - [更新记录](UPDATE.MD)
