@@ -21,6 +21,7 @@
     - [条件用法](装备栏系统/条件/ConditionUsage.md)
     - [条件](装备栏系统/条件/Condition.md)
 - **战斗系统**
+  - [战斗数据](战斗系统/FightData.md)
   - [伤害类型](战斗系统/DamageType.md)
   - [战斗机制组](战斗系统/Fight.md)
   - [机制](战斗系统/Mechanic.md)

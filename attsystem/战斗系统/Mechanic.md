@@ -8,18 +8,18 @@
 
 #### 配置
 
-于 **plugins/Attributes/mechanics** 文件夹下任意一个**YAML文件**中声明
+于 **plugins/Attributes/mechanics** 文件夹下任意一个**YAML 文件**中声明
 
 ```yaml
 # damage 计算伤害值
 damage:
-  script: 'mechanics.groovy::damage'
+  script: "mechanics.groovy::damage"
 # crit 计算暴击值
 #用js或groovy都能写
 crit:
-  script: 'mechanics.js::crit'
+  script: "mechanics.js::crit"
 vampire:
-  script: 'mechanics.groovy::vampire'
+  script: "mechanics.groovy::vampire"
 ```
 
 #### 代码
