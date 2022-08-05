@@ -25,9 +25,6 @@
   - [伤害类型](战斗系统/DamageType.md)
   - [战斗机制组](战斗系统/Fight.md)
   - [机制](战斗系统/Mechanic.md)
-  - **战斗数据**
-    - [战斗数据](战斗系统/战斗数据/FightData.md)
-    - [调用原则](战斗系统/战斗数据/Principle.md)
 - **其它**
   - [占位符](其它/PlaceHolder.md)
   - [MythicMobs](其它/MythicMobs.md)
