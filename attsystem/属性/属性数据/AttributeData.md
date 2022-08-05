@@ -14,7 +14,7 @@ AttributeDataCompound:
       Matcher: value
 ```
 
-例子:
+拿一个玩家的`AttributeDataCompound`(**属性数据集**)做例子:
 
 ```yaml
 AttributeDataCompound:
@@ -26,6 +26,7 @@ AttributeDataCompound:
       value: 10
     AttackSpeed:
       value: 1
+  #玩家装备栏中所有物品的lore属性都会存在这里
   LORE-ATTRIBUTE:
     MaxHealth:
       value: 25

@@ -41,7 +41,7 @@ MyFirstAttribute:
   read-pattern: Default
 MySecondAttribute:
   priority: 100
-  oriented: entity
+  include-entity: true
   names:
     - "第II个属性"
     - "第二个属性啊吧吧吧"

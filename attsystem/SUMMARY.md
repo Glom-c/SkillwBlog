@@ -16,15 +16,10 @@
   - **属性功能**
     - [属性功能](属性/属性功能/Realise.md)
 - **装备栏系统**
-  - [装备栏](装备/Equipment.md)
+  - [槽位](装备栏系统/Slot.md)
   - **条件**
-    - [条件](装备/条件/Condition.md)
-    - **写法**
-      - [单行条件](装备/条件/LineCondition.md)
-      - [多行条件](装备/条件/StrsCondition.md)
-    - **用法**
-      - [字符串条件](装备/条件/StrCondition.md)
-      - [NBT 条件](装备/条件/NBTCondition.md)
+    - [条件用法](装备栏系统/条件/ConditionUsage.md)
+    - [条件](装备栏系统/条件/Condition.md)
 - **战斗系统**
   - [伤害类型](战斗系统/DamageType.md)
   - [战斗机制组](战斗系统/Fight.md)
@@ -39,11 +34,7 @@
   - **基本用法**
     - [基本操作](开发/Basic.md)
   - **拓展**
-    - [属性](开发/拓展/ExportAtt.md)
     - [读取格式](开发/拓展/ReadPattern.md)
-    - [条件](开发/拓展/Condition.md)
-    - [槽位](开发/拓展/Slot.md)
-    - [机制](开发/拓展/Mechanic.md)
     - [触发战斗机制组](开发/拓展/Fight.md)
     - [自定义战斗信息](开发/拓展/Message.md)
 - [FAQ](FAQ.md)
