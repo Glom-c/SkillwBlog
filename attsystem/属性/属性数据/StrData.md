@@ -26,7 +26,9 @@ YourReadGroup:
     percent: <percent>/100
 ```
 
+```
 属性名: 属性值(%) 属性值-> percent
 属性名: 属性值 属性值-> value
+```
 
 > 字符串中的属性，需要符合此属性读取组的格式
