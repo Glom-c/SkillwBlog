@@ -6,34 +6,48 @@
 
 ## 声明
 
-#### 配置
+```javascript
+var Coerce = static("Coerce");
+var Player = find("org.bukkit.entity.Player");
+var ProxyParticle = find(">taboolib.common.platform.ProxyParticle");
+var Plus = static("com.skillw.attsystem.internal.operation.Plus").INSTANCE;
 
-于 **plugins/Attributes/mechanics** 文件夹下任意一个**YAML 文件**中声明
-
-```yaml
-# damage 计算伤害值
-damage:
-  script: "mechanics.groovy::damage"
-# crit 计算暴击值
-#用js或groovy都能写
-crit:
-  script: "mechanics.js::crit"
-vampire:
-  script: "mechanics.groovy::vampire"
+//@Mechanic(my_mechanic)
+function exec(fightData, context, damageType) {
+  var attacker = fightData.attacker;
+  var defender = fightData.defender;
+  var power = attacker instanceof Player ? attacker.level : 0;
+  var damage = calculate([context.get("formula"), attacker, null]);
+  var location = defender.location;
+  var particle = ProxyParticle.EXPLOSION_LARGE;
+  Tool.sendSimpleParticle(particle, location, 36.0, 100, 1.0);
+  fightData.damageSources.put(
+    "my_mechanic_damage",
+    Plus.element(power * 10 + damage)
+  );
+  return true;
+}
 ```
-
-#### 代码
-
-编写 [com.skillw.attsystem.api.mechanic.Mechanic](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/mechanic/Mechanic.html) 的子类，并调用 **Mechanic#register** 以完成注册
 
 ```kotlin
-object: Mechanic("fire"){
-   override fun apply(fightData: FightData, context: Map<String, Any>, damageType: DamageType): Any?{
-        if (context["enable"] != "true") return null
+@AutoRegister
+object MyMechanic : Mechanic("my_mechanic") {
+    override fun exec(fightData: FightData, context: Map<String, Any>, damageType: DamageType): Any? {
+        val attacker = fightData.attacker ?: return false
         val defender = fightData.defender
-        val time = Coerce.toInteger(context["time"])
-        defender.fireTicks = time
-        return time
-   }
-}.register()
+        val power = max(if (attacker is Player) attacker.level else 0, 0)
+        val damage = Coerce.toDouble(context["formula"])
+        val players = attacker.getNearbyEntities(10.0, 10.0, 10.0).filterIsInstance<Player>().map { adaptPlayer(it) }
+        val location = adaptLocation(defender.location)
+        ProxyParticle.EXPLOSION_LARGE.sendTo(location, range = 10.0)
+        fightData.damageSources["my_mechanic_damage"] = Plus.element(power * 10 + damage)
+        return true
+    }
+}
 ```
+
+### 效果
+
+在将`my_mechanic`加入**战斗机制组**`attack-damage`后
+
+![mechanic](images/my_mechanic.gif)
