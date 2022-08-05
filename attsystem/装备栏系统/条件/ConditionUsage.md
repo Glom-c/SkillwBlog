@@ -50,9 +50,9 @@ ATTRIBUTE_DATA:
       percent: -20
 CONDITION_DATA:
   example-att-data: "Lv.50"
-  example-att-data$MovementSpeed: "Lv.100"
-  example-att-data$PhysicalDefense: "Lv.120,职业: 肉盾"
-  example-att-data$Luck$percent: "职业: 枪兵"
+  "example-att-data$MovementSpeed": "Lv.100"
+  "example-att-data$PhysicalDefense": "Lv.120,职业: 肉盾"
+  "example-att-data$Luck$percent": "职业: 枪兵"
 ```
 
 如此一来，玩家装备此物品时：
