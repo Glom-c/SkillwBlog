@@ -49,7 +49,7 @@ function arrayOf(JsArray) : Array<Any?> //js数组 转 java数组
 function listOf(JsArray) : MutableList<Any?> //js数组 转 List
 
 function analysis(String): String //解析字符串内嵌函数
-function placeholder(String): String  //解析字符串内占位符(papi&pou)
+function placeholder(String,entity): String  //解析字符串内占位符(papi&pou)
 function color(String): String //解析字符串内颜色
 function calculate(formula,Player?,Map?): BigDecimal //计算公式，支持带入papi&pou占位符，支持Map<String,String>替换
 

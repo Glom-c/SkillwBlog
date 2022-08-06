@@ -34,6 +34,6 @@
   - **拓展**
     - [读取格式](开发/拓展/ReadPattern.md)
     - [触发战斗机制组](开发/拓展/Fight.md)
-    - [自定义战斗信息](开发/拓展/Message.md)
+    - [战斗信息显示方式](开发/拓展/Message.md)
 - [FAQ](FAQ.md)
 - [更新记录](UPDATE.MD)

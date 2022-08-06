@@ -22,8 +22,6 @@
   - [添加脚本源](开发/ScriptSource.md)
   - **拓展**
     - [顶级成员](开发/拓展/TopLevelCode.md)
-    - [字符串内联函数](开发/拓展/InlineFunction.md)
-    - [占位符](开发/拓展/Placeholder.md)
     - [脚本注解](开发/拓展/ScriptAnnotation.md)
     - [脚本引擎](开发/拓展/ScriptEngine.md)
 - **功能**

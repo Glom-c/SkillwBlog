@@ -1,27 +1,25 @@
 # 占位符
 
-##### %pou_run_ 脚本路径_函数% - 执行脚本
+##### `%pou_run_ 脚本路径_函数%` - 执行脚本
 
-##### %as_att:属性id_占位符id%  -  属性值
+##### `%as_att:属性id_占位符id%` - 属性值
 
-占位符id在读取组里可以自定义
+`占位符 id` 在读取组里可以自定义
 
-例: %as_att:MaxHealth_total%
+例: `%as_att:MaxHealth_total%`
 
-不写占位符id，默认为total
+不写`占位符 id`，默认为 `total`
 
-##### %as_equipment:装备组id_装备id_属性名_占位符id%   -  某装备属性值
+##### `%as_equipment:装备组id_装备id_属性名_占位符id%` - 某装备属性值
 
-装备组 BASE-EQUIPMENT  (AS提供的基础装备组)
+> 装备组 `BASE-EQUIPMENT` (AS 提供的基础装备组)
+> 其它的你可以通过 `/as itemstats ` 再按 `TAB` 查看
+> 例: `%as_equipment:BASE-EQUIPMENT_hand_PhysicalDamage_total%`
 
-装备ID: slot.yml可以自定义
+##### `%as_formula:公式id%` - 返回公式计算结果
 
-例: %as_equipment:BASE-EQUIPMENT_hand_PhysicalDamage_total%
+**公式 id**: `formula.yml` 内的公式 id
 
-##### %as_formula:公式id%  -  返回公式计算结果
+例: `%as_formula:luck%` => 实体 luck 公式计算结果
 
-公式id: formula.yml内的公式id
-
-例:  %as_formula:luck% => 实体luck公式计算结果
-
-##### %as_formula_str:公式id%  -  返回公式字符串
+##### `%as_formula_str:公式id%` - 返回公式字符串
