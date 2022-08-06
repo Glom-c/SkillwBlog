@@ -13,7 +13,6 @@
   - [指令](进阶/Command.md)
   - [脚本监听器](进阶/Listener.md)
   - [顶级成员](进阶/TopLevel.md)
-  - [线程安全](进阶/Safe.md)
 - **锋芒出露**
   - [持久化容器](高级/Container.md)
   - [全息文字](高级/Hologram.md)
