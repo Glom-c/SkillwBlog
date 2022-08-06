@@ -214,3 +214,11 @@ EntityRayHit 算法
 ## 新增
 
 Placeholder 注解
+
+## 1.4.4-2022 年 8 月 6 日
+
+## 新增
+
+`AutoRegister` 的 `test` 构造参数
+
+兼容 1.19.1(未测试)

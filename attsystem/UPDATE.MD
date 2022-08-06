@@ -200,3 +200,22 @@ Pouvoir 重构后的字符串内联函数 (性能很棒的说)
 ### 修复
 
 注解注册注销显示 bug
+
+## 1.3.5 2022 年 8 月 6 日
+
+### 兼容
+
+1.19.1
+
+MM 的属性伤害机制支持以下参数
+|标签(缩写) |描述 |默认设置|
+|:--:|:--:|:--:|
+|amount(a) |造成的伤害值 |1|
+|ignoreArmor(ia) |是否无视防御,为 false 时,若伤害の目标为自身,则无法伤害自身 |false|
+|preventknockback(pkb,pk) |是否不造成击退 |false|
+|preventimmunity(pi) |是否无视伤害硬直 |false|
+|element(仅限付费版) |伤害类型(MMOItems) |无|
+
+且支持参数传递，例:
+`att-damage{key="战斗机制组id";test=1} @Target`
+则可以在战斗机制组中通过`{test}`调用参数值
