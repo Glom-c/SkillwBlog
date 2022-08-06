@@ -1,3 +1,4 @@
 - [Pouovir](pouvoir)
 - [AttributeSystem](attsystem)
+- [BuffSystem](buffsystem)
 - [CodeMind](codemind)
