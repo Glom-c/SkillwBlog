@@ -50,7 +50,7 @@
 
 **更新记录** [http://blog.skillw.com/#sort=buffsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=buffsystem&doc=UPDATE.md)
 
-**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
+**JavaDoc** [http://book.skillw.com/buffsystem/doc/](http://book.skillw.com/buffsystem/doc/)
 
 **MCBBS** [https://www.mcbbs.net/thread-1371263-1-1.html](https://www.mcbbs.net/thread-1371263-1-1.html)
 
