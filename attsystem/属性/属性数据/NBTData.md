@@ -37,7 +37,8 @@ YourReadGroup:
 
 ```yaml
 ATTRIBUTE_DATA:
-  任意唯一键_建议英文:
+  #这里写什么都行，别重复
+  example-key:
     ExampleAtt:
       value: 100
       percent: 10

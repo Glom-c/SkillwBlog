@@ -12,6 +12,7 @@ YourReadGroup:
     - '<name>: <percent>\(%\)'
     - "<name>: <value>"
   placeholder:
+    #这里的<total>用于带入total公式，不是捕获组！！
     total: <total>
     value: <value>
     percent: <percent>/100
