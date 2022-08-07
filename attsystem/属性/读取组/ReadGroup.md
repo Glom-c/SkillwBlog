@@ -33,27 +33,6 @@ ATTRIBUTE_DATA:
 
 > 这个占位符适用于所有属性，不仅仅是"读取组的属性"
 
-<!-- ### 开发者
-
-详见: [ReadGroup](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/read/ReadGroup.html) & [NumberStatus](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/status/NumberStatus.html)
-
-捕获组值
-
-```kotlin
-//这里的属性需是 ConfigAttribute 的子类
-(AttributeSystem.attributeDataManager[uuid].getStatus("属性id") as NumberStatus).get("捕获组id")
-```
-
-变量值
-
-```kotlin
-//这里的属性需是 ConfigAttribute 的子类
-val attribute = AttributeSystem.attributeManager["属性id"]
-val readGroup = attribute.readGroup
-val status = AttributeSystem.attributeDataManager[uuid].getStatus(attribute)
-val value = readGroup.placeholder("占位符ID",attribute,status,livingEntity)
-``` -->
-
 ## 自定义读取组
 
 于 **plugins/AttributeSystem/read** 文件夹下任意一个**YAML 文件**中声明
@@ -135,9 +114,3 @@ Add:
 ```
 
 应该都能看懂吧
-
-<!-- ## 声明(ReadPattern -> 开发者)
-
-实现[**ReadPattern**](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/read/ReadPattern.html)并注册至[**ReadPatternManager**](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/manager/ReadPatternManager.html)即可
-
-使用时的属性不能是**ConfigAttribute**，需要自己实现一个**Attribute** (因为**ConfigAttribute**参数是**ReadGroup**) -->

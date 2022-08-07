@@ -29,5 +29,3 @@
 <br/>
 
 <br/>
-
-[巨兆 ppt](http://book.skillw.com/school/1.pptx)

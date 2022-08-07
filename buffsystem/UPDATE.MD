@@ -30,4 +30,4 @@
 
 **BuffAPI**
 
-[占位符](其它/PlaceHolder.md)
+[占位符](https://blog.skillw.com/#sort=buffsystem&doc=%E5%85%B6%E5%AE%83/PlaceHolder.md)

@@ -59,7 +59,7 @@
 
 **更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
 
-**JavaDoc** [http://book.skillw.com/attrsystem/doc/](http://book.skillw.com/attrsystem/doc/)
+**JavaDoc** [https://doc.skillw.com/attsystem/](https://doc.skillw.com/attsystem/)
 
 **MCBBS** [https://www.mcbbs.net/thread-1307249-1-1.html](https://www.mcbbs.net/thread-1307249-1-1.html)
 

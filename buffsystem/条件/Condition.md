@@ -4,7 +4,7 @@
 
 ## 使用
 
-见 [Buff](../Buff/Buff.md)
+见 [Buff](https://blog.skillw.com/#sort=buffsystem&doc=Buff/Buff.md)
 
 ## 注意
 

@@ -6,7 +6,7 @@
 
 ## 使用
 
-请看上一节 [条件用法](ConditionUsage.md)
+请看上一节 [条件用法](https://blog.skillw.com/#sort=attsystem&doc=%E8%A3%85%E5%A4%87%E6%A0%8F%E7%B3%BB%E7%BB%9F/%E6%9D%A1%E4%BB%B6/ConditionUsage.md)
 
 ## 声明
 

@@ -77,7 +77,7 @@ attack-damage:
 
 `damage`,`crit`,`vampire`是机制 id，
 这三个是默认提供的，分别用于 `伤害计算` `暴击计算` `吸血`
-如果你想实现属于你的伤害逻辑，可以拓展[机制](Mechanic.md)
+如果你想实现属于你的伤害逻辑，可以拓展[机制](https://blog.skillw.com/#sort=attsystem&doc=%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F/Mechanic.md)
 
 ### 机制参数
 

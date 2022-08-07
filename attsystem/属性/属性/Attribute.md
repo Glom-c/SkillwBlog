@@ -101,8 +101,3 @@ CritDamage:
 ### 读取格式 [read-pattern]
 
 与一个读取格式绑定，读取格式是用来定义属性是如何读取的
-
-<!--
-## 声明 (开发者)
-
-构造 [com.skillw.attsystem.api.attribute.Attribute](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/attribute/Attribute.html) 的子类 /   [com.skillw.attsystem.api.attribute.ConfigAttribute](http://book.skillw.com/attrsystem/doc/com/skillw/attsystem/api/attribute/ConfigAttribute.html) 的实例，并调用 **Attribute#register** 以完成注册 -->

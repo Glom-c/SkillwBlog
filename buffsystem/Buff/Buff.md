@@ -19,4 +19,4 @@ example:
 ## 使用
 
 指令`/buff add Glom_ 任意key example {duration:-1}`
-亦或者[**MM 机制**](../其它/MythicMobs.md)
+亦或者[**MM 机制**](https://blog.skillw.com/#sort=buffsystem&doc=%E5%85%B6%E5%AE%83/MythicMobs.md)
