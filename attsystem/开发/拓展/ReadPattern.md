@@ -1,6 +1,6 @@
 # 读取格式拓展
 
-##
+## Kotlin
 
 ```kotlin
 @AutoRegister
@@ -27,6 +27,7 @@ object MyReadPattern : ReadPattern("my_read_pattern") {
 
 ```javascript
 //@ReadPattern(my_read_pattern)
+//文件注解顶头写
 
 function read(string, attribute, entity, slot) {
   //code
