@@ -69,7 +69,7 @@ object Abs : PouFunction<Double>("abs") {
 使用:
 
 ```kotlin
- println("abs(-1)".parse())
+ println("abs -1 ".parse())
 ```
 
 打印: 1
