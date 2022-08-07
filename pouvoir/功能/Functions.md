@@ -263,3 +263,22 @@ a 赋值为 false
 `&a`
 若 a 有值，则返回 a 变量的值
 否则返回 '&a'
+
+## analysis
+
+#### 参数
+
+1. 字符串
+
+#### 作用
+
+解析字符串
+
+#### 例子
+
+```
+set name to 'Neige'
+analysis 'hi! i'm a { if check &name == Neige then Neige else Human } !'
+```
+
+返回`hi! i'm a Neige`
