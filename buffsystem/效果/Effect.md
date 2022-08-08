@@ -10,8 +10,8 @@ example-attribute:
   #效果类型
   type: attribute
   attributes:
-  #             字符串内联函数
-    - '移动速度: {calculate \'1000+100 * {level}\'}'
+    #             字符串内联函数
+    - "移动速度: {calculate '1000+100 * {level}'}"
 ```
 
 接下来逐一讲解
