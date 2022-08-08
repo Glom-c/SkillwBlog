@@ -124,5 +124,5 @@ example-attribute:
   type: attribute
   attributes:
   #             字符串内联函数
-    - '移动速度: {calculate '1000+100 * {level}'}'
+    - '移动速度: {calculate \'1000+100 * {level}\'}'
 ```
