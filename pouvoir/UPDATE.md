@@ -232,3 +232,52 @@ Placeholder 注解
 ## 修改
 
 现在解析一段文本时的**上下文**会是它的**父上下文**
+
+## 1.4.6-2022 年 8 月 12 日
+
+## 优化
+
+预编译内联函数
+
+## 新增
+
+新增内联函数
+
+> / 或
+> ()中的是可选
+> {}参数
+> []数组
+> { } 代码块
+
+- has {key} 是否有此变量
+- set {key} by lazy (to/=) { } 懒汉式定义
+- set {key} ifndef (to/=) {value} 如未定义再定义
+- while {condition} (lable {lable}) { } 循环
+- break (the {lable})
+- continue (the {lable})
+- permission {entity} [ 'a.b.c' , 'c.b.a' ] 是否有权限
+- sound {sound} {location}/[ 'world' , x , y , z ] (with {volume} {pitch}) 播放声音
+- arrayOf [ a , b , c ] 数组
+- listOf [ a , b , c ] List
+- import {class path} 获取静态类对象
+- print {any} 打印
+- all [ bool1 , bool2 , bool3 ] 满足所有
+- any [ bool1 , bool2 , bool3 ] 满足其一
+- not {bool} 取反
+- return {any} 返回
+- type double/int/long/float/short/byte/bool/char/string {any} 强转转换
+- replace {string} [ '你要替换的内容' to '替换后的' , 'a' to 'b' ] 替换
+
+- list {list} set {any} at {index}
+- list {list} get at {index}
+- list {list} remove at {index}
+- list {list} add {any}
+- list {list} contains {ant}
+- list {list} size/clear/isEmpty/toArray/toString
+
+- getField {obj} {field name}
+- getFieldStatic {obj} {field name}
+- invoke {obj} {method name} [ '参数 1' , '参数 2' ]
+- invokeStatic {obj} {method name} [ '参数 1' , '参数 2' ]
+- setField {obj} {field name} {any}
+- setFieldStatic {obj} {field name} {any}

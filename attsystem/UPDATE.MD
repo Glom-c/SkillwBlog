@@ -225,3 +225,147 @@ MM 的属性伤害机制支持以下参数
 ### 修复
 
 1.19.1 兼容问题
+
+## 1.4.0 2022 年 8 月 12 日
+
+### 新增
+
+**字符串属性**，可以自定义**字符串属性数据**间的**运算操作**
+
+**属性映射**，支持**内联函数**
+
+自带 **AttributePlus 3** 的所有属性，均通过脚本实现（可以自由组合拆卸）
+
+#### **条件**
+
+- altitude
+- attribute
+- fighting
+- fire
+- food
+- ground
+- health
+- level
+- gm
+- slot
+- water
+- weather
+- world
+
+#### ** 机制**
+
+- damage
+- crit
+- vampire
+- rebound
+- potion
+- frozen
+- thunder
+- flame
+- mythicskill
+- function
+- kether
+- shield
+
+#### **字符串运算操作**
+
+- roman_num
+
+#### 读取组
+
+##### 数字
+
+- default \[\[valuemax, percentmax, scalar, percentmin, valuemin, percent, value\]\]
+- percent \[\[percentmax, percentmin, percent\]\]
+
+##### 字符串
+
+- strskip \[\[value\]\]
+- strappend \[\[value\]\]
+- strroman \[\[roman\]\]
+
+#### **属性**
+
+- 攻击力
+- 快速属性
+- 唯一字符串属性
+- 拼接字符串属性
+- 罗马数字
+- 法术伤害
+- 法术命中几率
+- 法术闪避几率
+- 法术暴击几率
+- 法术暴击伤害
+- 法术暴击抵抗
+- 法术防御
+- 法术护甲穿透
+- 法术破甲几率
+- 真实伤害
+- 攻击距离
+- 攻击速度
+- 击退抗性
+- PVE 伤害
+- PVP 伤害
+- PVE 防御
+- PVP 防御
+- 远程伤害
+- 远程护甲
+- 攻击力
+- 命中几率
+- 闪避几率
+- 暴击几率
+- 暴击伤害
+- 暴击抵抗
+- 护甲
+- 护甲穿透
+- 破甲几率
+- 燃烧伤害
+- 燃烧几率
+- 冰冻强度
+- 冰冻几率
+- 雷击伤害
+- 雷击几率
+- 反弹倍率
+- 反弹几率
+- 吸血几率
+- 吸血倍率
+- 吸血抵抗
+- 生命值
+- 生命恢复
+- 移动速度
+- 幸运
+- 经验加成
+- 箭矢速度
+- 箭矢精准
+- 箭矢穿透率
+- 箭矢穿透数
+- 法力值
+- 法力恢复
+- 技能极速
+- 盾牌减伤
+- 破盾几率
+
+### 兼容
+
+#### **Magic**
+
+添加**Action**: `att_damage`  
+必填参数 `fight-group: 战斗机制组id`  
+其他参数和 **DamageAction** 的一样
+
+#### **反作弊**
+
+- Matrix
+- AAC
+
+### 优化
+
+**NBT 条件的读取**
+
+- 物品 **lore** 缓存
+- 物品 **NBT** 缓存
+- 物品**属性数据**缓存
+
+### 修复
+
+无
