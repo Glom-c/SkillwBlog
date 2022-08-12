@@ -214,7 +214,6 @@ MM 的属性伤害机制支持以下参数
 |ignoreArmor(ia) |是否无视防御,为 false 时,若伤害の目标为自身,则无法伤害自身 |false|
 |preventknockback(pkb,pk) |是否不造成击退 |false|
 |preventimmunity(pi) |是否无视伤害硬直 |false|
-|element(仅限付费版) |伤害类型(MMOItems) |无|
 
 且支持参数传递，例:
 `att-damage{key="战斗机制组id";test=1} @Target`
