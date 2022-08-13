@@ -1099,3 +1099,41 @@ size/clear/isEmpty/toArray/toString
 ---
 
 # >>>From **AttributeSystem**
+
+> `namespace = attsysem`
+
+## data
+
+#### 参数
+
+- `damage`
+  - `get {key}` 获取伤害源，返回的是[OperationElement](https://doc.skillw.com/attsystem/com/skillw/attsystem/api/operation/OperationElement.html)
+  - `put {key} with {Number Operation} to {number}` 计入伤害源
+  - `remove {key}` 删除伤害源
+  - `has {key}` 是否存在伤害源
+  - `size` 伤害源总数
+  - `clear` 清除伤害源
+  - `isEmpty` 是否没有伤害源
+  - `keys` 伤害源 key 列表
+- `hasResult` 是否命中
+- `hasResult to/= true/false` 设置是否命中
+- `calMessage` 是否计算战斗信息
+- `calMessage to/= true/false` 设置是否计算战斗信息
+- `put {key} to {value}` 存数据
+- `get {key}` 取数据
+- `remove {key}` 删除数据
+- `has {key}` 是否有数据
+- `size` 数据总数
+- `clear` 清除所有数据
+- `isEmpty` 是否没有数据
+- `keys` 数据 key 列表
+
+#### 作用
+
+操作战斗数据
+
+#### 例子
+
+`data damage put 'crit' with scalar to 100.0`
+
+---
