@@ -25,6 +25,7 @@
   - [战斗数据](战斗系统/FightData.md)
   - [伤害类型](战斗系统/DamageType.md)
   - [战斗机制组](战斗系统/Fight.md)
+  - [机制列表](战斗系统/Mechanics.md)
   - [机制](战斗系统/Mechanic.md)
 - **其它**
   - [占位符](其它/PlaceHolder.md)

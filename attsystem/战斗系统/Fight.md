@@ -126,6 +126,6 @@ attack-damage:
 
 每个机制有每个机制的参数，具体由开发者自定义
 
-详见[机制列表]()
+详见[机制列表](https://blog.skillw.com/#sort=attsystem&doc=%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F/Mechanics.md)
 
 如果你想实现属于你的伤害逻辑，可以拓展[机制](https://blog.skillw.com/#sort=attsystem&doc=%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F/Mechanic.md)

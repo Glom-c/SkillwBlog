@@ -43,7 +43,7 @@
 
 ## 用法
 
-> 下载[**AttributeSystem**](https://www.mcbbs.net/thread-1307249-1-1.html)，**Pouvoir 1.4.0+**，**PlaceholderAPI**(可选)，**Mythicmobs**(可选)，放入 /plugins 文件夹中后重启服务器
+> 下载[**AttributeSystem**](https://www.mcbbs.net/thread-1307249-1-1.html)，**Pouvoir 1.4.6+**，**PlaceholderAPI**(可选)，**Mythicmobs**(可选)，放入 /plugins 文件夹中后重启服务器
 
 ## 支持
 
@@ -57,7 +57,7 @@
 
 **FAQ** [http://blog.skillw.com/#sort=attsystem&doc=FAQ.md](http://blog.skillw.com/#sort=attsystem&doc=FAQ.md)
 
-**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
+**更新记录** [http://blog.skillw.com/#sort=attsystem&doc=UPDATE.md](https://blog.skillw.com/#sort=attsystem&doc=UPDATE.md)
 
 **JavaDoc** [https://doc.skillw.com/attsystem/](https://doc.skillw.com/attsystem/)
 

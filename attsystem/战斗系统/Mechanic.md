@@ -4,6 +4,8 @@
 
 **机制** 是 **AttributeSystem** 的一大特色，你可以通过编写**机制**并在**战斗机制组**中使用来操纵**战斗过程**
 
+ **AttributeSystem** 自带的机制详见[机制列表](https://blog.skillw.com/#sort=attsystem&doc=%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F/Mechanics.md)
+
 ## 定义
 
 ```javascript
