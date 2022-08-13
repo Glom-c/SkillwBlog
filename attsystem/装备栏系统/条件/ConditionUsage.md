@@ -81,4 +81,4 @@ CONDITION_DATA:
 
 接下来，你应该会问： **都有哪些条件，参数都是什么？**
 
-见[条件列表]()
+见[条件列表](https://blog.skillw.com/#sort=attsystem&doc=%E8%A3%85%E5%A4%87%E6%A0%8F%E7%B3%BB%E7%BB%9F/%E6%9D%A1%E4%BB%B6/Conditions.md)

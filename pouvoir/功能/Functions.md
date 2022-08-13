@@ -5,6 +5,8 @@
 - 代入 PAPI / PouPAPI 变量
 - 嵌套
 
+# >>>From **Pouvoir**
+
 # 逻辑 [Logic]
 
 ## check
@@ -1095,3 +1097,5 @@ size/clear/isEmpty/toArray/toString
 获取总元素数量/删除所有值/是否为空/转为数组/转为字符串
 
 ---
+
+# >>>From **AttributeSystem**

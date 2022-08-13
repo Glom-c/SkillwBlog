@@ -33,5 +33,5 @@ Github：[https://github.com/Glom-c](https://github.com/Glom-c) 你可以在上�
 
 如果你觉得我的项目不错，可以多少给点.
 
-[https://afdian.net/@glom_]()
+[https://afdian.net/@glom_](https://afdian.net/@glom_)
 ![afdian](images/afdian-Glom_.jpg)
