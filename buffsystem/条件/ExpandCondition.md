@@ -9,7 +9,7 @@
 
 ## 拓展
 
-需要用到 [`BuffData`](http://doc.skillw.com/buffsystem/-buff-system/com.skillw.buffsystem.api.data/-buff-data/index.html)
+需要用到 [`BuffData`](https://doc.skillw.com/buffsystem/com/skillw/buffsystem/api/data/BuffData.html)
 
 > JavaScript
 

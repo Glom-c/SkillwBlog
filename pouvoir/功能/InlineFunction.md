@@ -28,6 +28,15 @@
 '我是 一段 字符串'
 ```
 
+## 字符串中的空格
+
+```
+print '\_\_\_我前面是三个空格 单空格可以正常使用 我后面是3个空格\_\_\_'
+```
+
+输出:
+`我前面是三个空格 单空格可以正常使用 我后面是3个空格`
+
 ## 字符串内联
 
 ```yaml
@@ -47,9 +56,8 @@ calculate '{if check 1 > 2 then 1 else 2} * 2 '
 var Coerce = static("Coerce");
 
 //@Function(abs)
-function example(reader, context) {
-  var number = reader.parseDouble(context);
-  if (number == null) return null;
+function example(parser) {
+  var number = parser.parseDouble();
   return abs(number);
 }
 ```
@@ -59,8 +67,8 @@ function example(reader, context) {
 ```kotlin
 @AutoRegister
 object Abs : PouFunction<Double>("abs") {
-    override fun execute(reader: IReader, context: Context): Double? {
-        val number = reader.parseDouble(context) ?: return null
+    override fun execute(parser:Parser): Double? {
+        val number = parser.parseDouble()
         return abs(number)
     }
 }

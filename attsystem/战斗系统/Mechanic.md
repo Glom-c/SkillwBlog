@@ -4,7 +4,7 @@
 
 **机制** 是 **AttributeSystem** 的一大特色，你可以通过编写**机制**并在**战斗机制组**中使用来操纵**战斗过程**
 
-## 声明
+## 定义
 
 ```javascript
 var Coerce = static("Coerce");
@@ -20,7 +20,7 @@ function exec(fightData, context, damageType) {
   var damage = calculate([context.get("formula"), attacker, null]);
   var location = defender.location;
   var particle = ProxyParticle.EXPLOSION_LARGE;
-  Tool.sendSimpleParticle(particle, location, 36.0, 100, 1.0);
+  Tool.sendParticle(particle, location, 36.0, 100, 1.0);
   fightData.damageSources.put(
     "my_mechanic_damage",
     Plus.element(power * 10 + damage)

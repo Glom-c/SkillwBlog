@@ -8,7 +8,7 @@
 
 ### 参数
 
-1.  `potions`(必填) 药水效果
+1.  `potions`(必填) [药水效果](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 2.  `ambient`(选填) 是否渲染更多粒子 默认 true
 3.  `particles`(选填) 是否具有粒子 默认 true
 4.  `icon`(选填) 是否具有图标 默认 true

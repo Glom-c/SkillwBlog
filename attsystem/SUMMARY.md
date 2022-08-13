@@ -19,6 +19,7 @@
   - [槽位](装备栏系统/Slot.md)
   - **条件**
     - [条件用法](装备栏系统/条件/ConditionUsage.md)
+    - [条件列表](装备栏系统/条件/Conditions.md)
     - [条件](装备栏系统/条件/Condition.md)
 - **战斗系统**
   - [战斗数据](战斗系统/FightData.md)

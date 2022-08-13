@@ -3,59 +3,35 @@
 ## Kotlin
 
 ```kotlin
-@AutoRegister
-object MyReadPattern : ReadPattern("my_read_pattern") {
-    override fun read(string: String, attribute: Attribute, entity: LivingEntity?, slot: String?): Status? {
-        //code
+    @AutoRegister
+    object MyReadPattern : ReadPattern<Any>("my_read_pattern"){
+        override fun read(string: String, attribute: Attribute, entity: LivingEntity?, slot: String?): Status<Any>? {
+            //code
+        }
+
+        override fun readNBT(map: Map<String, Any>, attribute: Attribute): Status<Any>? {
+            //code
+        }
+
+        override fun placeholder(key: String, attribute: Attribute, status: Status<*>, entity: LivingEntity?): Any? {
+            //code
+        }
+
+        override fun stat(attribute: Attribute, status: Status<*>, entity: LivingEntity?): TellrawJson {
+            //code
+        }
+
     }
-
-    override fun readNBT(map: Map<String, Any>, attribute: Attribute): Status? {
-        //code
-    }
-
-    override fun placeholder(key: String, attribute: Attribute, status: Status, entity: LivingEntity?): Any? {
-        //code
-    }
-
-    override fun stat(attribute: Attribute, status: Status, entity: LivingEntity?): TellrawJson {
-        //code
-    }
-}
-```
-
-## JavaScript
-
-```javascript
-//@ReadPattern(my_read_pattern)
-//文件注解顶头写
-
-function read(string, attribute, entity, slot) {
-  //code
-}
-
-function readNBT(map, attribute) {
-  //code
-}
-
-function placeholder(key, attribute, status, entity) {
-  //code
-}
-
-function stat(attribute, status, entity) {
-  //code
-}
 ```
 
 ## 用法
 
-在**属性声明处**指定**读取格式**
+在**属性定义处**指定**读取格式**
 
 > YAML
 
 ```yaml
 ExampleAttr:
-  priority: 100
-  include-entity: true
   names:
     - "示例属性"
   #读取格式

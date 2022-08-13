@@ -25,35 +25,49 @@
 
 ## 自定义属性
 
-于 **plugins/AttributeSystem/attributes** 文件夹下任意一个**YAML 文件**中声明你的属性即可
+于 **plugins/AttributeSystem/attributes** 文件夹下任意一个**YAML 文件**中定义你的属性即可
 
 ```yaml
-MyFirstAttribute:
-  #权重
-  priority: 100
-  #默认为true 是否计入实体属性
+ExampleAtt:
+  #权重  不填默认0
+  priority: 1
+  #是否会计算到实体属性上  不填默认true
   include-entity: true
-  #名称
+  #展示名  不填默认names的第一个
+  display: "攻击力"
+  #名称  不填默认是key
   names:
-    - "第一个属性"
-    - "第一个属性啊吧吧吧"
-  #读取组
+    - "示例属性"
+    - "示例属性2"
+    - "示例属性3"
+  #读取组 不填默认Default
   read-pattern: Default
-MySecondAttribute:
-  priority: 100
-  include-entity: true
-  names:
-    - "第II个属性"
-    - "第二个属性啊吧吧吧"
-  read-pattern: Default
+  #属性映射
+  map:
+    #其他属性, 这里格式和NBT属性一样
+    PhysicalDamage:
+      #其他属性的捕获组
+      #后面可以通过 <占位符公式id> 调用本属性读取组的占位符公式
+      #就像这样: <total>
+      #支持内联函数与占位符
+      value: |-
+        calculate '<total> * %player_level%'
 ```
 
-接下来由我将属性的声明逐一拆解进行讲解.
+> 你可以通过以下方式快速定义一个属性
+
+```yaml
+快速属性: {}
+```
+
+接下来由我将属性的定义逐一拆解进行讲解.
 
 ## 键 [key]
 
 属性的唯一标识符，用来存取属性数据
 读取 NBT 属性时会通过它来读取
+
+> NBT 属性 ，后面会详细讲解
 
 ```yaml
 ATTRIBUTE_DATA:
@@ -78,7 +92,7 @@ ATTRIBUTE_DATA:
 Crit:
   priority: 2
   names:
-    - "暴击"
+    - "伤害"
   read-pattern: Percent
 CritDamage:
   priority: 1
@@ -101,3 +115,15 @@ CritDamage:
 ### 读取格式 [read-pattern]
 
 与一个读取格式绑定，读取格式是用来定义属性是如何读取的
+**AttributeSystem**自带的**读取格式**:
+
+##### 数字
+
+- default \[\[valuemax, percentmax, scalar, percentmin, valuemin, percent, value\]\] 默认的数字属性读取组
+- percent \[\[percentmax, percentmin, percent\]\] 百分百属性读取组
+
+##### 字符串
+
+- strskip \[\[value\]\] 字符串读取组 (只读一个)
+- strappend \[\[value\]\] 字符串读取组 (以某符号为分隔符进行字符串叠加)
+- strroman \[\[roman\]\] 字符串读取组 (读取罗马数字)

@@ -10,72 +10,87 @@
 
 ## 拓展
 
-需要用到 [`BuffData`](http://doc.skillw.com/buffsystem/-buff-system/com.skillw.buffsystem.api.data/-buff-data/index.html)
+需要用到 [`BuffData`](https://doc.skillw.com/buffsystem/com/skillw/buffsystem/api/data/BuffData.html)
 
 > JavaScript
 
 ```javascript
-//@EffectType(attribute)
+//@EffectType(boss_bar)
 //文件注解顶头写
 
-function getSource(data, sourceKey) {
-  if (!data.containsKey(sourceKey))
-    data.put(sourceKey, "${data.buffKey}:$key:${UUID.randomUUID()}");
-  return data.get(sourceKey);
-}
+//这个Effect的作用是： 给玩家显示BossBar
 
-function getAttrProvider() {
-  const attrProvider = static("BuffSystem").attributeManager.attrProvider;
-  if (attrProvider == null) {
-    warning("No attribute plugin!");
-    return null;
+Player = find("org.bukkit.entity.Player");
+BarStyle = org.bukkit.boss.BarStyle;
+BarColor = org.bukkit.boss.BarColor;
+BarFlag = org.bukkit.boss.BarFlag;
+Coerce = static("Coerce");
+
+function realize(entity, data, map) {
+  if (!(entity instanceof Player)) return;
+  const handled = data.handle(map);
+  const title = handled.getOrDefault("title", "你妹填title");
+  // PINK,
+  // BLUE,
+  // RED,
+  // GREEN,
+  // YELLOW,
+  // PURPLE,
+  // WHITE
+  const color = BarColor.valueOf(handled.getOrDefault("color", "BLUE"));
+  //  SOLID,
+  // SEGMENTED_6,
+  // SEGMENTED_10,
+  // SEGMENTED_12,
+  // SEGMENTED_20
+  const style = BarStyle.valueOf(handled.getOrDefault("style", "SOLID"));
+  // progress∈[0,1]
+  const progress = handled.getOrDefault("progress", "0.75");
+  const isVisible = Coerce.toBoolean(handled.getOrDefault("visible", "true"));
+  const flags = handled.getOrDefault("flags", listOf("PLAY_BOSS_MUSIC"));
+  const key = data.uniqueId + "bossbar-effect";
+  var bossBar = Data.get(key);
+  if (bossBar == null) {
+    bossBar = PlayerUtils.sendBossBar(entity, title, color, style, progress);
   }
-  return attrProvider;
+  bossBar.setTitle(title);
+  bossBar.color = color;
+  bossBar.style = style;
+  bossBar.progress = progress;
+  bossBar.isVisible = isVisible;
+
+  var allFlags = BarFlag.values;
+  for (index in allFlags) {
+    let flag = allFlags.get(index);
+    if (flags.contains(flag.name)) {
+      bossBar.addFlag(flag);
+    } else {
+      bossBar.removeFlag(flag);
+    }
+  }
+  Data.put(key, bossBar);
 }
 
-function realize(entity, data, section) {
-  //实现效果
-  if (!section.contains("attributes")) return;
-  const key = section.name;
-  const sourceKey = "attribute-effect-" + key + "-source";
-  const source = getSource(data, sourceKey);
-  const attrProvider = getAttrProvider();
-  const attributes = data
-    .replace(section.get("attributes"))
-    .stream()
-    .map(function (it) {
-      placeholder([it, entity]);
-    });
-  attrProvider.addAttribute(entity, source, attributes);
-}
-
-function unrealize(entity, data, section) {
-  //消除效果
-  const key = section.name;
-  const sourceKey = "attribute-effect-" + key + "-source";
-  const source = getSource(data, sourceKey);
-  const attrProvider = getAttrProvider();
-  attrProvider.removeAttribute(entity, source);
+function unrealize(entity, data, map) {
+  const bossBar = Data.get(data.uniqueId + "bossbar-effect");
+  if (bossBar == null) return;
+  bossBar.removeAll();
 }
 ```
 
 > Kotlin
 
 ```kotlin
-class AttributeEffect(override val key: String, val attributes: List<String>) : BaseEffect(),
+class AttributeEffect(key: String, val attributes: List<String>) : BaseEffect(key),
     ConfigurationSerializable {
 
-    //Key to get the source from BuffMemory
-    private val sourceKey = "attribute-effect-$key-source"
 
     private fun getSource(data: BuffData): String {
-        if (!data.containsKey(sourceKey))
-            data[sourceKey] = "${data.buffKey}:$key:${UUID.randomUUID()}"
-        return data.getAs<String>(sourceKey).toString()
+        return "attribute-effect-$key-source-${data.key}}"
     }
 
     override fun realize(entity: LivingEntity, data: BuffData) {
-        var attributes = data.replace(this.attributes)
+        var attributes = data.handle(this.attributes)
         if (entity is Player) {
             attributes = attributes.map { it.replacePlaceholder(entity) }
         }
@@ -87,31 +102,29 @@ class AttributeEffect(override val key: String, val attributes: List<String>) : 
         attrProvider.removeAttribute(entity, getSource(data))
     }
 
-    companion object {
-
-        @JvmStatic
-        fun deserialize(section: ConfigurationSection): AttributeEffect? {
-            try {
-                val key = section.name
-                if (section["type"].toString().lowercase() != "attribute") return null
-                val attributes = section.getStringList("attributes")
-                return AttributeEffect(key, attributes).apply { config = true }
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-            return null
-        }
-
-        @SubscribeEvent
-        fun load(event: EffectLoadEvent) {
-            event.result = deserialize(event.section) ?: return
-        }
-    }
-
 
     override fun serialize(): MutableMap<String, Any> {
         return linkedMapOf("type" to "attribute", "attributes" to attributes)
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as AttributeEffect
+
+        if (key != other.key) return false
+        if (attributes != other.attributes) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = key.hashCode()
+        result = 31 * result + attributes.hashCode()
+        return result
+    }
+
 }
 ```
 

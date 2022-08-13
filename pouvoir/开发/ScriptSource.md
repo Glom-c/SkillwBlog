@@ -1,8 +1,8 @@
 # 添加脚本源
 
-见 [`ScriptManager`](http://doc.skillw.com/pouvoir/-pouvoir/com.skillw.pouvoir.api.manager.sub.script/-script-manager/index.html)
-方法 [`addScriptDir`](http://doc.skillw.com/pouvoir/-pouvoir/com.skillw.pouvoir.api.manager.sub.script/-script-manager/add-script-dir.html)
-方法 [`addScript`](http://doc.skillw.com/pouvoir/-pouvoir/com.skillw.pouvoir.api.manager.sub.script/-script-manager/add-script.html)
+见 [`ScriptManager`](https://doc.skillw.com/pouvoir/com/skillw/pouvoir/api/manager/sub/script/ScriptManager.html)
+方法 [`addScriptDir`](<https://doc.skillw.com/pouvoir/com/skillw/pouvoir/api/manager/sub/script/ScriptManager.html#addScriptDir(File)>)
+方法 [`addScript`](<https://doc.skillw.com/pouvoir/com/skillw/pouvoir/api/manager/sub/script/ScriptManager.html#addScript(File)>)
 
-每次重载时记得再调用一次 [`addScriptDir`](http://doc.skillw.com/pouvoir/-pouvoir/com.skillw.pouvoir.api.manager.sub.script/-script-manager/add-script-dir.html)
+每次重载时记得再调用一次 [`addScriptDir`](<https://doc.skillw.com/pouvoir/com/skillw/pouvoir/api/manager/sub/script/ScriptManager.html#addScriptDir(File)>)
 添加后，脚本会跟着 **Pouvoir** 重载而重编译

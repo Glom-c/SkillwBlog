@@ -4,7 +4,7 @@
 
 ## 什么是 Buff 数据[BuffData]?
 
-**BuffSystem** 中，**Buff**生效时的环境(变量存储的地方)
+**BuffSystem** 中，**Buff**生效时的环境(变量存储的地方),你可以理解成参数
 
 ## 为什么要给用户讲?
 
@@ -21,26 +21,19 @@
 ### 例子
 
 ```yaml
-#Buff key (id)
 example:
-  name: "示例Buff"
-  #条件
+  name: "动态属性"
+  data:
+    duration: 400
+    name: 攻击力
+    value: 100
   conditions:
     - "time"
-  #效果
   effects:
-    - "example-attribute"
+    - type: attribute
+      attribute:
+        - "{name}: {value}"
 ```
 
-```yaml
-#效果key
-example-attribute:
-  #效果类型
-  type: attribute
-  attributes:
-    #             字符串内联函数
-    - "移动速度: {calculate '1000+100 * {level}'}"
-```
-
-指令`/buff add Glom_ 任意key example {duration:-1,level:10}`
+指令`/buff add Glom_ 任意key example {name:属性名,value:值}`
 亦或者[**MM 机制**](https://blog.skillw.com/#sort=buffsystem&doc=%E5%85%B6%E5%AE%83/MythicMobs.md)

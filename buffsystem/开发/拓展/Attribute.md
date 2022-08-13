@@ -1,7 +1,5 @@
 # 兼容属性插件
 
-**JavaScript** 请自力更生
-
 > Kotlin
 
 ```kotlin

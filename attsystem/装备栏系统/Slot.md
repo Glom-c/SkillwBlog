@@ -9,22 +9,32 @@
 > AttributeSystem/slot.yml
 
 ```yaml
+#左ID 右槽位
 player:
   #左AS内部槽位key 右原版槽位
-  "HEAD":
-    slot: "HEAD"
-    #必须含的lore
-    requirements:
-      - "头盔"
+  "头盔": "HAED"
+  #你可以这么写来限制槽位物品
+  #"头盔":
+  # slot: "HEAD"
+  # #必须含的lore
+  # requirements:
+  #   - "头盔"
   #可节点形式/字符串形式
-  "CHEST": "CHEST"
-  "LEGS": "LEGS"
-  "FEET": "FEET"
-  "HAND": "HAND"
-  "OFFHAND": "OFFHAND"
+  "胸甲": "CHEST"
+  "护腿": "LEGS"
+  "靴子": "FEET"
+  "主手": "HAND"
+  "副手": "OFFHAND"
   #读取槽位20的装备 以20th为id存入装备栏
   "20th": "20"
-# 萌芽槽位
+entity:
+  "头盔": "HEAD"
+  "胸甲": "CHEST"
+  "护腿": "LEGS"
+  "靴子": "FEET"
+  "主手": "HAND"
+  "副手": "OFFHAND"
+# 萌芽槽位 会读取萌芽example槽位中的装备
 germ-slots:
   - "example"
 ```
@@ -39,7 +49,7 @@ germ-slots:
 ### 开发者
 
 ```kotlin
-val equipmentDataCompound = AttributeSystem.equipmentDataManager[uuid]
-val data = equipmentDataCompound["BASE-EQUIPMENT"]
-val value = data.get("HEAD")
+val compound = uuid.getEquipData()
+val data = compound["BASE-EQUIPMENT"]
+val value = data["HEAD"]
 ```

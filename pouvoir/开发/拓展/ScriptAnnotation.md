@@ -1,6 +1,6 @@
 # 脚本注解
 
-需要用到 [`ScriptAnnotationData`](http://doc.skillw.com/pouvoir/-pouvoir/com.skillw.pouvoir.api.script.annotation/-script-annotation-data/index.html)
+需要用到 [`ScriptAnnotationData`](https://doc.skillw.com/pouvoir/com/skillw/pouvoir/api/script/annotation/ScriptAnnotationData.html)
 
 ```kotlin
 object : ScriptAnnotation(key) {

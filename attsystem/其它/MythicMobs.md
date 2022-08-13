@@ -48,7 +48,7 @@ SkeletalKnight:
     #同样支持条件 乃至单行条件
     - "Lv.100"
     - "移动速度: 100"
-#  Options:
+ Options: {}
 #这里的原版属性不能和AS的属性冲突 所以注释掉了
 #   MovementSpeed: 0.1
 ```

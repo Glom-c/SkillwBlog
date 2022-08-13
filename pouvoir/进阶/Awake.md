@@ -48,7 +48,7 @@ function test() {
 
 ## AwakeType 参数
 
-如果你想判断函数是在哪个声明周期被调用的，就要用到 **Awake Type**
+如果你想判断函数是在哪个定义周期被调用的，就要用到 **Awake Type**
 
 ```javascript
 //@Awake(Enable)

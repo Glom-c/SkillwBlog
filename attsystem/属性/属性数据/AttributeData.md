@@ -5,12 +5,17 @@
 让我们简单了解一下**AttributeSystem**的**属性数据**是如何存储的:
 
 ```yaml
+#属性数据集
 AttributeDataCompound:
+  #属性数据 （包含多个属性状态）
   AttributeData:
-    #属性(状态)key
-    Attribute:
+    #属性状态1
+    Attribute1:
       #属性状态的具体内容
       #捕获组id: 值
+      Matcher: value
+    #属性状态2
+    Attribute2:
       Matcher: value
 ```
 
@@ -47,14 +52,12 @@ AttributeDataCompound:
 
 ### 属性数据集 (AttributeDataCompound)
 
-一个实体的**属性数据集**，存储 **属性数据 key** 与 **其对应的属性数据**
+一个实体的**属性数据集**，存储 **属性数据**
 
 ### 属性数据 (AttributeData)
 
-由 **key(字符串)** 与 **属性状态** 组成
+由 **属性状态** 组成
 
 ### 属性状态 (AttributeStatus)
 
-默认是由 **捕获组** 及其 **值** 组成
-
-> 这里也可以填其它数据类型，前提是你拓展了其它数据类型的属性
+由 **捕获组** 及其 **值** 组成

@@ -8,15 +8,39 @@
 #Buff key (id)
 example:
   name: "示例Buff"
-  #条件
+  #默认Buff数据
+  #就是自带的 Data Json，默认参数
+  data:
+    #均可修改，自定义
+    level: 1
+    debuff: true
+    duration: 400
+    name: 攻击力
+    value: 100
   conditions:
     - "time"
-  #效果
   effects:
+    #可以直接用已有的效果
     - "example-attribute"
+    #也可以直接定义一个
+    - type: attribute
+      attribute:
+        #通过动态参数来做到动态属性动态值
+        - "{name}: {value}"
+    - type: attribute
+      attribute:
+        - "防御力: 100"
+
+    - type: permission
+      permissions:
+        - "cmi.command.fly:true"
+
+    - type: potion
+      potions:
+        - "SPEED:10"
 ```
 
 ## 使用
 
-指令`/buff add Glom_ 任意key example {duration:-1}`
+指令`/buff add Glom_ 任意key example {}`
 亦或者[**MM 机制**](https://blog.skillw.com/#sort=buffsystem&doc=%E5%85%B6%E5%AE%83/MythicMobs.md)
