@@ -24,11 +24,11 @@ example:
     - "example-attribute"
     #也可以直接定义一个
     - type: attribute
-      attribute:
+      attributes:
         #通过动态参数来做到动态属性动态值
         - "{name}: {value}"
     - type: attribute
-      attribute:
+      attributes:
         - "防御力: 100"
 
     - type: permission

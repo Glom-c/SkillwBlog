@@ -217,7 +217,7 @@ function damagePreSec() {
         //获取属性总值
         const damage = dataCompound.getAttrValue("每秒伤害", "total");
         //同步进行伤害处理
-        task(function () {
+        task(function (task) {
             for each(var other in entity.getNearbyEntities(5, 5, 5)) {
             if (!(other instanceof LivingEntity)) continue
             other.damage(damage)

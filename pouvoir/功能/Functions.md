@@ -1,10 +1,5 @@
 # 字符串内联函数
 
-均支持
-
-- 代入 PAPI / PouPAPI 变量
-- 嵌套
-
 # >>>From **Pouvoir**
 
 # 逻辑 [Logic]
@@ -163,7 +158,73 @@ print 2
 
 ---
 
-# Bukkit
+# 任务 (Task)
+
+## task
+
+#### 参数
+
+1. in {delay} - 延迟 tick (可选)
+2. every {period} - 周期 tick (可选)
+3. {Block} - 代码块
+
+#### 作用
+
+同步执行代码
+
+#### 例子
+
+```
+task in 10 every 5 {
+    print 1
+}
+```
+
+在半秒后，每 0.25 秒打印一次`1`
+
+## async
+
+#### 参数
+
+1. in {delay} - 延迟 tick (可选)
+2. every {period} - 周期 tick (可选)
+3. {Block} - 代码块
+
+#### 作用
+
+异步执行代码 (请注意线程安全)
+
+#### 例子
+
+```
+async in 10 every 5 {
+    print 1
+}
+```
+
+在半秒后，每 0.25 秒打印一次`1`
+
+## sync
+
+#### 参数
+
+1. {Block} - 代码块
+
+#### 作用
+
+快速跳回同步执行代码
+只能在异步使用，否则会堵塞主线程
+
+#### 例子
+
+```
+async in 10 every 5 {
+    print 1
+    sync { print 2 }
+}
+```
+
+# 游戏 (Bukkit)
 
 ## permission
 
@@ -186,32 +247,247 @@ permission &entity [ 'a.b.c' , 'c.b.a' ]
 
 ---
 
-## sound
+## effect
 
 #### 参数
 
-1. [声音 ID](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html)
-2. Location 直接填对象 或者 构造参数构建
-3. 音量 音调 (可选，要写必须一起写)
+1. {Particle} - 粒子类型
+2. at {Location} - 位置
+3. limit {Int} - 可视范围 (可选)
+4. offset {Vector} - 偏移 (可选)
+5. amount {Int} - 粒子数量 (可选)
+6. speed {Double} - 播放速度(?) (可选)
+7. data {ParticleData} - 粒子数据 (可选)
 
 #### 作用
 
-播放声音
+播放粒子效果
 
 #### 例子
 
 ```
-sound 'BLOCK_GRAVEL_HIT' [ 'world' , 0 , 64 , 0 ] with 1 1
+effect 'REDSTONE' at [ 'world' 0 64 0 ]
 ```
 
+在世界`world`的坐标`0,64,0`处播放粒子`REDSTONE`
+
+---
+
+## uuid
+
+#### 参数
+
+1. 实体
+
+#### 作用
+
+获取实体 uuid
+
+#### 例子
+
+```
+uuid &entity
+```
+
+返回实体的 UUID
+
+---
+
+## world
+
+#### 参数
+
+1. 世界名
+
+#### 作用
+
+获取世界
+
+#### 例子
+
+```
+world 'world'
+```
+
+---
+
+## location
+
+#### 参数
+
+1. [ {世界} {x} {y} {z} ]
+2. with {pitch} {yaw} - 可选
+
+#### 作用
+
+构建 Location
+
+#### 例子
+
+```
+location [ world 'world' 0 0 0 ] with 1 1
+```
+
+---
+
+## vector
+
+#### 参数
+
+1. [ {x} {y} {z} ]
+
+#### 作用
+
+构建向量
+
+#### 例子
+
+```
+vector [ 1 1 1 ]
+```
+
+---
+
+## color
+
+#### 参数
+
+1. [ {red} {green} {blue} ]
+
+#### 作用
+
+构建颜色，范围`0~255`
+
+#### 例子
+
+```
+color [ 255 255 255 ]
+```
+
+---
+
+## particle
+
+#### 参数
+
+1. 粒子类型 ID
+
+#### 作用
+
+获取粒子类型
+
+[粒子效果 ID 列表](https://bukkit.windit.net/javadoc/org/bukkit/Particle.html)
+
+#### 例子
+
+```
+particle 'CRIT'
+```
+
+---
+
+## sound
+
+#### 参数
+
+1. 声音类型 id
+
+#### 作用
+
+获取声音类型
+
+[声音 ID 列表](https://bukkit.windit.net/javadoc/org/bukkit/Sound.html)
+
+---
+
+## material
+
+#### 参数
+
+1. 材质类型 id
+
+#### 作用
+
+获取材质类型
+
+[材质 ID 列表](https://bukkit.windit.net/javadoc/org/bukkit/Material.html)
+
+---
+
+## particleData
+
+#### 参数
+
+1. 类型
+2. 参数列表
+
+#### 作用
+
+构建粒子数据
+
+|      类型      |         介绍          |                                   参数                                   |
+| :------------: | :-------------------: | :----------------------------------------------------------------------: |
+|      dust      |     REDSTONE 数据     |                            {Color} in {size}                             |
+| dustTransition | REDSTONE 颜色转换数据 |                    {初 Color} to {末 Color} in {size}                    |
+|     block      |     方块粒子数据      |                          {Material} with {data}                          |
+|      item      |     物品粒子数据      | {Material} (with {data}) (name {name}) (lore {lore}) (data {model data}) |
+|   vibration    |      震动(?)数据      |                 {初 Location} to {Destination} in {time}                 |
+
+> {size} 代表粒子尺寸(?) 填小数即可
+>
+> `( )`内的代表可选，但是要按顺序填
+>
+> {time} 代表运动时间, 填整数 单位为 tick
+
+#### 例子
+
+```
+particleData dust [ color [ 255 255 255 ] in 1 ]
+```
+
+---
+
+## destination
+
+#### 参数
+
+1. 类型
+2. 参数
+
+#### 作用
+
+构建 Vibration 的 Destination
+
+|   类型   |   介绍   |    参数     |
+| :------: | :------: | :---------: |
+| location | 坐标位置 | {location}  |
+|  entity  | 实体位置 | {实体 UUID} |
+
+#### 例子
+
+`destination &endLocation`
 或
+`destination uuid &entity`
+
+---
+
+## item
+
+#### 参数
+
+1. 材质类型
+
+#### 作用
+
+构建物品
+
+#### 例子
 
 ```
-set loc to invoke &entity getLocation
-sound 'BLOCK_GRAVEL_HIT' &loc with 1 1
+item material 'DIAMOND'
 ```
 
-播放声音`BLOCK_GRAVEL_HIT`
+---
 
 # 循环结构 [Loop]
 
@@ -726,6 +1002,26 @@ a 赋值为 false
 
 小概率返回 a
 
+---
+
+## randomObj
+
+#### 参数
+
+1. 对象列表(支持键值对)
+
+#### 作用
+
+返回列表中随机对象
+
+#### 例子
+
+`randomObj [ '粗糙的' '破损的' '破碎的' '破残的' '破坏的' ]`
+
+随机返回一个前缀
+
+---
+
 # 字符串 [String]
 
 ## analysis
@@ -980,125 +1276,118 @@ replace ' 咖啡 是sb' [ '咖啡' to 'Glom_' , 'sb' to '帅逼' ]
 
 ---
 
-## list set
+## mapOf
 
 #### 参数
 
-1. `List` 对象
-2. 对象
-3. 下标
+1. with {Map 模板} - Map 模板 (可选)
+2. 键值对列表
 
 #### 作用
 
-设置 `List` 下标处的值
+生成 `Map` 映射对象
 
 #### 例子
 
-`list &list set 'abab' at 1`
+`mapOf [ 'a' to 1 , 'b' to 2 , 'c' to 3 ]`
 
 ---
 
-## list set
+## mapTemplate
 
 #### 参数
 
-1. `List` 对象
-2. 对象
-3. 下标
+1. 键列表
 
 #### 作用
 
-设置 `List` 下标处的值
+生成 `Map模板`
 
 #### 例子
 
-`list &list set 'abab' at 1`
+```
+set maps to mapListOF with mapTemplate ['品质' '颜色' '材质']
+[
+    ['粗糙' '&7' 'WOODEN_SWORD']
+    ['良好' '&3' 'STONE_SWORD']
+]
+
+print maps get at 0 get '品质'
+```
+
+打印:
+
+```
+粗糙
+```
 
 ---
 
-## list get
+## mapListOf
 
 #### 参数
 
-1. `List` 对象
-2. 下标
+1. with {Map 模板}
+2. 值列表的列表
 
 #### 作用
 
-获取 `List` 下标处的值
+需配合`Map模板`使用
+生成 `Map` 映射对象的列表(下标从 0 开始)
 
 #### 例子
 
-`list &list get at 1`
+```
+mapListOF with mapTemplate ['品质' '颜色' '材质']
+[
+    ['粗糙' '&7' 'WOODEN_SWORD']
+    ['良好' '&3' 'STONE_SWORD']
+]
+
+print maps get at 0 get '品质'
+```
+
+打印:
+
+```
+粗糙
+```
 
 ---
 
-## list remove
+## pairOf
 
 #### 参数
 
-1. `List` 对象
-2. 下标
+1. 键值对
 
 #### 作用
 
-删除 `List` 下标处的值
+构建键值对
 
 #### 例子
 
-`list &list remove at 1`
-
----
-
-## list add
-
-#### 参数
-
-1. `List` 对象
-2. 对象
-
-#### 作用
-
-添加 `List` 的值
-
-#### 例子
-
-`list &list add 'abab'`
-
----
-
-## list contains
-
-#### 参数
-
-1. `List` 对象
-2. 对象
-
-#### 作用
-
-判断对象是否在 `List` 中
-
-#### 例子
-
-`list &list contains 'abab'`
-
----
-
-## list size/clear/isEmpty/toArray/toString
-
-#### 参数
-
-1. `List` 对象
-
-#### 作用
-
-size/clear/isEmpty/toArray/toString
-
-获取总元素数量/删除所有值/是否为空/转为数组/转为字符串
+`pairOf 'a' to 1`
 
 ---
 
 # >>>From **AttributeSystem**
+
+> `namespace = common`
+
+## attr
+
+- `read {string list}` - 读取字符串列表属性
+- `readItem {item}` - 读取物品属性
+- `readLore {item}` - 读取物品 lore 属性
+- `readNBT {item}` - 读取物品 NBT 属性
+- `add {key} {attr_data}` - 给实体添加属性数据 (实体为变量 entity 的值)
+- `remove {key}` - - 删除实体属性数据 (实体为变量 entity 的值)
+- `addItemAttr {item} {key} {attr_data}` - 添加物品的属性数据
+- `addItemAttr {item} {attr_data_compound}` - 添加物品的属性数据
+- `removeItemAttr {key}` - 删除物品的属性数据
+
+---
 
 > `namespace = attsysem`
 
@@ -1135,5 +1424,151 @@ size/clear/isEmpty/toArray/toString
 #### 例子
 
 `data damage put 'crit' with scalar to 100.0`
+
+---
+
+## in-fight
+
+#### 参数
+
+1. 实体
+
+#### 作用
+
+获取实体是否在战斗中
+
+#### 例子
+
+`in-fight &entity`
+
+---
+
+# >>>From **ItemSystem**
+
+> `namespace = item_system`
+
+## def
+
+#### 参数
+
+1. 变量名
+2. to/= 值
+
+#### 作用
+
+定义变量，与`set`的区别是
+
+- 只能在`物品生产流程`中使用
+- 若已经有此变量名的变量，则跳过定义
+- 变量值会自动保存到物品 NBT，供自动更新/重新构建物品时使用
+
+#### 例子
+
+`def a to check 1 == 2`
+
+a 赋值为 false
+并返回 false
+
+---
+
+## override
+
+#### 参数
+
+1. 变量名
+2. to/= 值
+
+#### 作用
+
+定义变量，与`def`的区别是
+
+- 会覆盖已有的变量
+
+#### 例子
+
+```
+set a to 1
+override a to check 1 == 2
+```
+
+a 赋值为 false
+并返回 false
+(无视已有的变量`a`，直接覆盖)
+
+---
+
+## save
+
+#### 参数
+
+1. 变量名列表
+
+#### 作用
+
+将变量值保存到物品 NBT，供自动更新/重新构建物品时使用
+
+#### 例子
+
+`save [ 'a' 'b' 'c' ]`
+
+---
+
+## syncNBT
+
+#### 参数
+
+1. NBT 路径
+
+#### 作用
+
+同步物品 NBT 的值
+
+#### 例子
+
+`syncNBT '耐久.当前耐久'`
+
+---
+
+## papi
+
+#### 参数
+
+1. 文本
+
+#### 作用
+
+(实体对象为名为 `entity` 变量的值)
+解析文本的占位符
+
+#### 例子
+
+`papi '%player_level%'`
+
+---
+
+## mmskill
+
+#### 参数
+
+1. 技能名
+2. with 触发器 id - 触发器 (可选，默认为`API`)
+
+可用的 Trigger 类型：
+`DEFAULT`, `API`, `ATTACK`, `BOW_HIT`, `BLOCK`, `BLOCK_PLACE`, `BLOCK_BREAK`,
+`COMBAT`, `CONSUME`, `CROUCH`, `UNCROUCH`, `DAMAGED`, `DROPCOMBAT`, `DEATH`,
+`DESPAWNED`, `ENTERCOMBAT`, `EXPLODE`, `INTERACT`, `KILL`, `KILLPLAYER`,
+`PLAYERDEATH`, `SHOOT`, `SIGNAL`, `SPAWN`, `SPLASH_POTION`, `SWING`, `TARGETCHANGE`,
+`TARGETED`, `TELEPORT`, `TIMER`, `USE`, `RIGHTCLICK`, `READY`, `CAST`, `FISH`,
+`FISH_BITE`, `FISH_CATCH_FISH`, `FISH_CATCH_ENTITY`, `FISH_GROUND`, `FISH_REEL`,
+`FISH_FAIL`, `TAME`, `TAME_FAIL`, `TRIDENT_THROW`, `TRIDENT_HIT`, `CUSTOM`
+
+#### 作用
+
+(实体对象为名为 `entity` 变量的值)
+实体释放 MM 技能
+
+#### 例子
+
+`mmskill 'ExampleSkill' with API`
 
 ---
