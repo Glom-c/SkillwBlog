@@ -25,5 +25,5 @@
   - **拓展**
     - [兼容属性插件](开发/拓展/Attribute.md)
 - [FAQ](FAQ.md)
-- [更新记录](UPDATE.MD)
+- [更新记录](UPDATE.md)
 - [JavaDoc](http://doc.skillw.com/buffsystem/)
