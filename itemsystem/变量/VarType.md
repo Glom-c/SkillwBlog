@@ -16,3 +16,39 @@
 ## 都有哪些变量类型?
 
 见[变量类型列表](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/VarTypes.md)
+
+## 拓展
+
+拓展的物品元与普通物品元的使用无异
+
+需要用到 [Memory](https://doc.skillw.com/itemsystem/com/skillw/itemsystem/api/meta/data/Memory.html)
+
+### JavaScript
+
+```javascript
+//@VarType(costom-var-type)
+function myType(memory) {
+  //获取str参数
+  const str = memory.getString("str");
+  return str;
+}
+```
+
+### Kotlin
+
+你可以去[**Github**](https://github.com/Glom-c/ItemSystem)借鉴源码
+
+```kotlin
+@AutoRegister
+object VarTypeNumber : VariableType("number", "num") {
+    override fun createVar(memory: Memory): Any {
+        with(memory) {
+            val number = getDouble("value", 0.0)
+            val format = getString("format", "#.##")
+            val max = getDouble("max", number)
+            val min = getDouble("min", number)
+            return max(min(number, max), min).format(format)
+        }
+    }
+}
+```

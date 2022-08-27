@@ -14,7 +14,6 @@
     - [物品元](元/Meta.md)
     - [物品元列表](元/Metas.md)
     - [全局物品元数据](元/GlobalMetaData.md)
-    - [拓展元](元/ExpandMeta.md)
   - **变量**
     - [变量](变量/Var.md)
     - [变量类型](变量/VarType.md)
