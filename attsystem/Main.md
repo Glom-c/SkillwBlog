@@ -43,7 +43,9 @@
 
 ## 用法
 
-> 下载[**AttributeSystem**](https://www.mcbbs.net/thread-1307249-1-1.html)，**Pouvoir 1.4.6+**，**PlaceholderAPI**(可选)，**Mythicmobs**(可选)，放入 /plugins 文件夹中后重启服务器
+> 下载[**AttributeSystem**](https://www.mcbbs.net/thread-1307249-1-1.html)，**Pouvoir**，**PlaceholderAPI**(可选)，**Mythicmobs**(可选)，放入 /plugins 文件夹中后重启服务器
+
+#### 本插件的大部分内容基于**Pouvoir**, 请在阅读本 WIKI 确保前阅读过[Pouvoir WIKI](https://blog.skillw.com/#sort=pouvoir&doc=README.md)
 
 ## 支持
 

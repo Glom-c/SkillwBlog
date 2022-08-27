@@ -36,7 +36,9 @@
 
 ## 用法
 
-> 下载[**BuffSystem**](https://www.mcbbs.net/thread-1371263-1-1.html)，**Pouvoir 1.4.4+**，**Mythicmobs**(可选)，**AttributeSystem**/**AttributePlus**/**OriginAttribute**/**SX-Attribute**(四选一)，放入 /plugins 文件夹中后重启服务器
+> 下载[**BuffSystem**](https://www.mcbbs.net/thread-1371263-1-1.html)，**Pouvoir**，**Mythicmobs**(可选)，**AttributeSystem**/**AttributePlus**/**OriginAttribute**/**SX-Attribute**(四选一)，放入 /plugins 文件夹中后重启服务器
+
+#### 本插件的大部分内容基于**Pouvoir**, 请在阅读本 WIKI 确保前阅读过[Pouvoir WIKI](https://blog.skillw.com/#sort=pouvoir&doc=README.md)
 
 ## 支持
 
@@ -55,12 +57,3 @@
 **MCBBS** [https://www.mcbbs.net/thread-1371263-1-1.html](https://www.mcbbs.net/thread-1371263-1-1.html)
 
 **爱发电** [https://afdian.net/@glom\_](https://afdian.net/@glom_)
-
-个人博客: [url=https://www.mcbbs.net/plugin.php?id=link_redirect&target=http%3A%2F%2Fblog.skillw.com%2F]http://blog.skillw.com/[/url]
-[font=微软雅黑][color=black]G[/color][/font][font=微软雅黑][color=black]lom 的插件交流群: [url=https://qm.qq.com/cgi-bin/qm/qr?k=s6F_zSCQPUAZ643h440K6dicB3bLuZ0-&jump_from=webapi][font=微软雅黑][color=Black][color=purple][b]470746324[/b][/color][/color][/font][/url][/color][/font]
-[b][color=indigo]Pouvoir[/color] [/b][url=https://www.mcbbs.net/thread-1221977-1-1.html][b][color=green]->点我<-[/color][/b][/url]
-[b][color=blue]AttributeSystem[/color][/b] [url=https://www.mcbbs.net/thread-1307249-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
-[b][color=black]BuffSystem[/color][/b] [url=https://www.mcbbs.net/thread-1371263-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
-[b][color=navy]RandomItem[/color][/b] [url=https://www.mcbbs.net/thread-1156871-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
-
-[img]https://s2.loli.net/2022/07/26/BNtuWizgqjVxPoD.jpg[/img]

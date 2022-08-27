@@ -28,6 +28,8 @@
   - [机制列表](战斗系统/Mechanics.md)
   - [机制](战斗系统/Mechanic.md)
 - **其它**
+  - [配置](其它/Config.md)
+  - [公式系统](其它/Formula.md)
   - [占位符](其它/PlaceHolder.md)
   - [MythicMobs](其它/MythicMobs.md)
 - **开发者**

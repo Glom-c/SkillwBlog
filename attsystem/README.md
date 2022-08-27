@@ -4,6 +4,8 @@
 
 ## 提前说一下
 
+#### 本插件的大部分内容基于**Pouvoir**, 请在阅读本 WIKI 确保前阅读过[Pouvoir WIKI](https://blog.skillw.com/#sort=pouvoir&doc=README.md)
+
 每篇教程都会附带一个例子，方便大家理解。
 
 实在有不理解的请在 qq 交流群里提问: 470746324

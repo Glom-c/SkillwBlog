@@ -31,7 +31,7 @@ example:
     - "time"
   effects:
     - type: attribute
-      attribute:
+      attributes:
         - "{name}: {value}"
 ```
 

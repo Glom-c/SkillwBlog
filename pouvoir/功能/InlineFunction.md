@@ -49,6 +49,7 @@ calculate '{if check 1 > 2 then 1 else 2} * 2 '
 ## 提供了哪些函数?
 
 见下节 [函数列表](Functions.md)
+其中一些特殊的变量类型，支持中缀表达式动作，见 [动作列表](Actions.md)
 
 ## 拓展
 
