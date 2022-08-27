@@ -84,7 +84,7 @@
 #### 提供的参数
 
 - `builder` - 物品构建器
-- `event` - [构建中事件](https://doc.skillw.com/itemsystem/com/skillw/itemsystem/api/event/ItemBuildEvent.Building.html)
+- `event` - [构建后事件](https://doc.skillw.com/itemsystem/com/skillw/itemsystem/api/event/ItemBuildEvent.After.html)
 - 物品过程数据中所有变量
 
 ---

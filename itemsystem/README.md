@@ -41,6 +41,20 @@
 
 > 下载[**ItemSystem**](https://www.mcbbs.net/thread-1371263-1-1.html)，**Pouvoir 1.5.0+**，**Mythicmobs**(可选)，**AttributeSystem**(可选)， **BuffSystem**(可选)，放入 /plugins 文件夹中后重启服务器
 
+## 展示
+
+### 自由の随机
+
+![example](images/is_example.gif)
+
+### 炫酷の发光
+
+![glow](images/is_glow.gif)
+
+### 物品动作(其一)
+
+![gem](images/is_gem.gif)
+
 ## 支持
 
 如果你觉得插件不错，可以通过 [**爱发电**](https://afdian.net/@glom_) 进行支持

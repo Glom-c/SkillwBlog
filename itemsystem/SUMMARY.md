@@ -28,5 +28,5 @@
   - **基本用法**
     - [基本操作](开发/Basic.md)
 - [FAQ](FAQ.md)
-- [更新记录](UPDATE.MD)
+- [更新记录](UPDATE.md)
 - [JavaDoc](http://doc.skillw.com/itemsystem/)
