@@ -384,3 +384,23 @@ Placeholder 注解
 - repeat
 
 具体看函数列表吧
+
+# 1.5.0-2022 年 8 月 27 日
+
+### 重构
+
+**内联函数系统**的**解释器**
+(累死劳资)
+
+### 新增
+
+**动作系统**
+一些**函数**
+详见:
+
+- [**函数列表**](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/Functions.md)
+- [**动作列表**](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/Actions.md)
+
+### 修复
+
+1.18 全息实体回收问题

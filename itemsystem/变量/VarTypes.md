@@ -2,7 +2,7 @@
 
 > 提供 IS 自带的，如果您有意愿，可以给我 pr 你拓展的变量类型
 
-### number / num
+## number / num
 
 #### 参数
 
@@ -25,7 +25,7 @@ value: 100
 
 ---
 
-### string
+## string
 
 #### 参数
 
@@ -45,7 +45,7 @@ value: "我是一个字符串"
 
 ---
 
-### strings
+## strings
 
 #### 参数
 
@@ -67,7 +67,7 @@ values:
 
 ---
 
-### map
+## map
 
 #### 参数
 
@@ -94,7 +94,7 @@ type: map
 
 ---
 
-### random
+## random
 
 #### 参数
 
@@ -116,7 +116,7 @@ values:
 
 ---
 
-### weight
+## weight
 
 #### 参数
 

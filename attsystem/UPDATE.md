@@ -511,3 +511,13 @@ MM 的属性伤害机制支持以下参数
 具体位置是 `message.yml`中的`fight-message.holo` 和 `health-regain-holo`(这个只有攻击者(回血的实体)占位符)
 
 可以自定义**攻击者**为`null`时的**攻击者名**，具体位置是`message.yml`的`fight-message.default-name`
+
+---
+
+# 1.4.2 2022 年 8 月 27 日
+
+#### **支持**
+
+抛射物伤害等，支持提前获取**攻击者属性**
+
+兼容 **ItemsAdder**
