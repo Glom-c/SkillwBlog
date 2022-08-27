@@ -38,4 +38,4 @@
     - [触发战斗机制组](开发/拓展/Fight.md)
     - [战斗信息显示方式](开发/拓展/Message.md)
 - [FAQ](FAQ.md)
-- [更新记录](UPDATE.MD)
+- [更新记录](UPDATE.md)

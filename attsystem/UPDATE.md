@@ -246,7 +246,7 @@ API 变动，具体看 javadoc
 
 # 1.3.1 2022 年 7 月 25 日
 
-## 新增
+### 新增
 
 物品 NBT 属性条件
 
@@ -264,7 +264,7 @@ FightDataHandleEvent
 
 ItemNBTReadEvent
 
-## 修复
+### 修复
 
 'options.fight.damage-any-time' 不奏效
 
