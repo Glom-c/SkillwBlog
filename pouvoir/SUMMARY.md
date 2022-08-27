@@ -27,5 +27,6 @@
   - [占位符](功能/PlaceHolder.md)
   - [字符串内联函数](功能/InlineFunction.md)
   - [函数列表](功能/Functions.md)
+  - [动作列表](功能/Actions.md)
 - [Javadoc](http://doc.skillw.com/pouvoir/)
 - [更新记录](UPDATE.md)

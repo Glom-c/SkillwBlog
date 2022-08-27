@@ -2,7 +2,7 @@
 
 这里的变量指的是 [**内联函数**](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/InlineFunction.md) 中的变量
 **ItemSystem**只不过是多加了 2 种定义变量的方式，以及对**变量在物品上的生命周期**做了点规范而已
-下面的内容，需要你有贯穿[**内联函数**](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/InlineFunction.md) [**物品元**]() 的知识储备，请熟读
+下面的内容，需要你有贯穿[**内联函数**](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/InlineFunction.md) [**物品元**](https://blog.skillw.com/#sort=itemsystem&doc=%E5%85%83/Meta.md) 的知识储备，请熟读
 
 ## ItemSystem 中的 定义变量
 
@@ -110,7 +110,7 @@ values:
 
 ## ItemSystem 中变量的调用
 
-就像**内联函数**中一样，直接通过`&变量名`调用，并且支持[**中缀动作**]()
+就像**内联函数**中一样，直接通过`&变量名`调用，并且支持[**中缀动作**](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/Actions.md)
 
 你可以在**物品流程**中的任何地方(除了 meta 和各种 type)调用变量
 
@@ -118,7 +118,7 @@ values:
 
 ## define 物品元的变量类型
 
-见下一节[变量类型]()
+见下一节[变量类型](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/VarType.md)
 
 ## 细谈 cache(缓存) 与 save(保存)
 
@@ -143,4 +143,4 @@ values:
 
 ## override (重载/覆盖)
 
-会覆盖已有变量，用于覆盖父物品的变量，详见[物品继承]()
+会覆盖已有变量，用于覆盖父物品的变量，详见[物品继承](https://blog.skillw.com/#sort=itemsystem&doc=%E6%B7%B1%E9%80%A0/Extend.md)

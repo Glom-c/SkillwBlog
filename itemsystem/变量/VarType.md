@@ -15,4 +15,4 @@
 
 ## 都有哪些变量类型?
 
-见[变量类型列表]()
+见[变量类型列表](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/VarTypes.md)

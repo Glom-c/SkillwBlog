@@ -9,7 +9,7 @@
 
 ## 怎么使用?
 
-在 **process** / [**全局物品元数据**]() 中书写**物品元数据**
+在 **process** / [**全局物品元数据**](https://blog.skillw.com/#sort=itemsystem&doc=%E5%85%83/GlobalMetaData.md) 中书写**物品元数据**
 
 > 物品元数据 = 物品元 + 参数
 
@@ -41,4 +41,4 @@ process:
 
 ## 都有哪些?
 
-见[物品元列表]()
+见[物品元列表](https://blog.skillw.com/#sort=itemsystem&doc=%E5%85%83/Metas.md)

@@ -7,12 +7,12 @@
     - [配置](基础/Config.md)
   - **物品**
     - [物品](物品/Item.md)
-      - [物品选项](物品/Option.md)
-      - [物品流程](物品/Process.md)
-      - [流程数据](物品/ProcessData.md)
+    - [物品选项](物品/Option.md)
+    - [物品流程](物品/Process.md)
+    - [流程数据](物品/ProcessData.md)
   - **物品元**
     - [物品元](元/Meta.md)
-      - [物品元列表](元/Metas.md)
+    - [物品元列表](元/Metas.md)
     - [全局物品元数据](元/GlobalMetaData.md)
     - [拓展元](元/ExpandMeta.md)
   - **变量**

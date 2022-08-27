@@ -58,10 +58,10 @@ eaxmple_item:
 
 ### 物品选项 [`auto-update`]
 
-物品的一些配置，具体请看[物品选项]()
+物品的一些配置，具体请看[物品选项](https://blog.skillw.com/#sort=itemsystem&doc=%E7%89%A9%E5%93%81/Option.md)
 
 ### 物品流程 [`process`]
 
 物品的流程，每一个元素都是一个**物品元数据**
 构建物品时，**物品元**从上到下依次执行
-具体见 [物品流程]()
+具体见 [物品流程](https://blog.skillw.com/#sort=itemsystem&doc=%E7%89%A9%E5%93%81/Process.md)

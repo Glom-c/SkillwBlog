@@ -19,7 +19,7 @@ process:
 `display` 展示名物品元，根据提供的文本，设置物品展示名
 `lore` 描述物品元，根据提供的文本，增加物品的描述
 
-具体可见 [物品元]()
+具体可见 [物品元](https://blog.skillw.com/#sort=itemsystem&doc=%E5%85%83/Meta.md)
 
 ## 为什么要用列表，而不是节点?
 

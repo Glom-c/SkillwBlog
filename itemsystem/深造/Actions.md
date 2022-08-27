@@ -75,7 +75,7 @@
 
 - `attacker` - 攻击者
 - `defender` - 防御者
-- `event` - [EVE 事件]()
+- `event` - [EVE 事件](https://bukkit.windit.net/javadoc/org/bukkit/event/entity/EntityDamageByEntityEvent.html)
 
 ---
 
@@ -84,7 +84,7 @@
 #### 提供的参数
 
 - `builder` - 物品构建器
-- `event` - [构建中事件]()
+- `event` - [构建中事件](https://doc.skillw.com/itemsystem/com/skillw/itemsystem/api/event/ItemBuildEvent.Building.html)
 - 物品过程数据中所有变量
 
 ---
@@ -95,7 +95,7 @@
 
 - `location` - 放置的位置
 - `hand` - 放方块的手的名称
-- `event` - [放置方块事件]()
+- `event` - [放置方块事件](https://bukkit.windit.net/javadoc/org/bukkit/event/block/BlockPlaceEvent.html)
 
 ---
 
@@ -144,7 +144,7 @@
 
 #### 提供的参数
 
-- `event` - [实体掉落物品事件](https://bukkit.windit.net/javadoc/org/bukkit/event/entity/EntityDropItemEvent.html)/[API 掉落物品事件]()
+- `event` - [实体掉落物品事件](https://bukkit.windit.net/javadoc/org/bukkit/event/entity/EntityDropItemEvent.html)/[API 掉落物品事件](https://doc.skillw.com/itemsystem/com/skillw/itemsystem/api/event/ItemDropEvent.html)
 
 ---
 

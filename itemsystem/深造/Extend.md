@@ -276,6 +276,6 @@ DefenseGem:
 ```
 
 > 因为这里没有用到覆写，所以 `override: true` 省略了
-> 覆写的概念和用法已经在[变量]()讲过了，这里就不多赘述了
+> 覆写的概念和用法已经在[变量](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/Var.md)讲过了，这里就不多赘述了
 
-除了**物品元 define**，你也可以通过其它方式定义变量，如果你不知道，请看[变量]()
+除了**物品元 define**，你也可以通过其它方式定义变量，如果你不知道，请看[变量](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/Var.md)

@@ -289,7 +289,7 @@ nbt:
 #### 作用
 
 添加物品动作
-详细请见[物品动作]()
+详细请见[物品动作](https://blog.skillw.com/#sort=itemsystem&doc=%E6%B7%B1%E9%80%A0/Action.md)
 例:
 
 ```yaml
@@ -325,8 +325,8 @@ action:
 
 定义变量
 详见:
-[变量]()
-[变量类型列表]()
+[变量](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/Var.md)
+[变量类型列表](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/VarTypes.md)
 
 例:
 
@@ -352,7 +352,7 @@ values:
 在之后的元数据中，你可以这么调用: `&变量1号`
 因为它的类型是`strings`,所以类型是`List`,
 你可以通过 `&变量1号 get at 0` 来获取第一行，以此类推
-具体见[动作列表]()
+具体见[动作列表](https://blog.skillw.com/#sort=pouvoir&doc=%E5%8A%9F%E8%83%BD/Actions.md)
 
 ---
 

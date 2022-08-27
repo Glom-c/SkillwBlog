@@ -25,7 +25,7 @@
 
 不同动作有不同的参数可以调用
 
-你可以在这里查询到我们提供的所有物品动作: [物品动作列表]()
+你可以在这里查询到我们提供的所有物品动作: [物品动作列表](https://blog.skillw.com/#sort=itemsystem&doc=%E6%B7%B1%E9%80%A0/Actions.md)
 如果你有意愿，可以给我们提交你的动作: [https://github.com/Glom-c/blog/pulls](https://github.com/Glom-c/blog/pulls)
 
 ## 使用
