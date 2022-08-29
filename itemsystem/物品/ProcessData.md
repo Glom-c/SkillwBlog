@@ -27,4 +27,4 @@
 
 ### 例子
 
-`/is get ExampleItem -data {quality:传说}`
+`/item get ExampleItem -data {quality:传说}`

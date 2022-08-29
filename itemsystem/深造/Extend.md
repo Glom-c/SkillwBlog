@@ -184,7 +184,7 @@ extends:
 那么就让我们通过物品继承，优化一下**宝石物品**吧
 
 ```yaml
-Gem:
+BaseGem:
   process:
     - key: quality
       type: weight
@@ -215,8 +215,9 @@ Gem:
     - run: "def 总评分 to type int calculate ' { &品质评分 } * 10 '"
     - material: "{&材质}"
     - glow-color: "{&品质颜色}"
-    #注意这里，调用了父物品没有的变量 name 和 attributes
     - run: |-
+        def name to '模板'
+        def attributes to listOf [ '无' ] 
         def 名字 to &name
         def 属性 to join &attributes by '\n'
     - display: "{&品质颜色}{&名字}宝石"
@@ -249,7 +250,7 @@ Gem:
 
 AttackGem:
   extends:
-    - "Gem"
+    - "BaseGem"
   process:
     #给父物品提供了变量name和attributes
     - key: name
@@ -262,7 +263,7 @@ AttackGem:
         - "&f>> &7攻击力 &c+{ calculate '{&总评分}/10' }&8(%)"
 DefenseGem:
   extends:
-    - "Gem"
+    - "BaseGem"
   process:
     #给父物品提供了变量name和attributes
     - key: name
@@ -275,7 +276,7 @@ DefenseGem:
         - "&f>> &7护甲 &c+{ calculate '{&总评分}/10' }&8(%)"
 ```
 
-> 因为这里没有用到覆写，所以 `override: true` 省略了
+> 因为父物品元数据会被放到最后，所以这里没有用到**覆写(**`override`)
 > 覆写的概念和用法已经在[变量](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/Var.md)讲过了，这里就不多赘述了
 
 除了**物品元 define**，你也可以通过其它方式定义变量，如果你不知道，请看[变量](https://blog.skillw.com/#sort=itemsystem&doc=%E5%8F%98%E9%87%8F/Var.md)
