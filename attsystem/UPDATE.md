@@ -528,3 +528,12 @@ MM 的属性伤害机制支持以下参数
 
 1.19 空物品报错问题
 最大血量`<=0`报错问题
+
+个人博客: [url=https://www.mcbbs.net/plugin.php?id=link_redirect&target=http%3A%2F%2Fblog.skillw.com%2F]http://blog.skillw.com/[/url]
+[font=微软雅黑][color=black]G[/color][/font][font=微软雅黑][color=black]lom 的插件交流群: [url=https://qm.qq.com/cgi-bin/qm/qr?k=s6F_zSCQPUAZ643h440K6dicB3bLuZ0-&jump_from=webapi][font=微软雅黑][color=Black][color=purple][b]470746324[/b][/color][/color][/font][/url][/color][/font]
+[b][color=indigo]Pouvoir[/color] [/b][url=https://www.mcbbs.net/thread-1221977-1-1.html][b][color=green]->点我<-[/color][/b][/url]
+[b][color=blue]AttributeSystem[/color][/b] [url=https://www.mcbbs.net/thread-1307249-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
+[b][color=black]BuffSystem[/color][/b] [url=https://www.mcbbs.net/thread-1371263-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
+[b][color=navy]ItemSystem[/color][/b] [url=https://www.mcbbs.net/thread-1379506-1-1.html][b][color=Green]->点我<-[/color][/b][/url]
+
+[img][/img]
