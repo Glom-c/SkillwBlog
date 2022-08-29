@@ -51,3 +51,11 @@ extends:
 
 继承**父物品**拥有的**物品元数据**
 详细见[物品继承](https://blog.skillw.com/#sort=itemsystem&doc=%E6%B7%B1%E9%80%A0/Extend.md)
+
+## 物品唯一 [unique]
+
+```yaml
+unique: true
+```
+
+让每个物品都独一无二 (不可堆叠)
