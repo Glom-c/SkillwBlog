@@ -462,14 +462,22 @@ buffs:
 
 # 怪物插件[MythicMobs]
 
-## drop-skill
+## drop-skills
 
 #### 参数
 
-1. 技能 id
+1. 技能 id 列表
 
 #### 作用
 
 物品掉落时触发 **MM 技能**
+
+例:
+
+```yaml
+drop-skills:
+  - "mm技能id1"
+  - "mm技能id2"
+```
 
 ---
