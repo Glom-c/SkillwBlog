@@ -1529,6 +1529,22 @@ a 赋值为 false
 
 ---
 
+## dynamic
+
+#### 参数
+
+1. `{ 内联函数段 }`
+
+#### 作用
+
+动态内联函数段
+
+#### 例子
+
+`dynamic { calculate '{item nbt ' 耐久.当前耐久'} * 100' }`
+
+---
+
 ## papi
 
 #### 参数
@@ -1551,16 +1567,7 @@ a 赋值为 false
 #### 参数
 
 1. 技能名
-2. with 触发器 id - 触发器 (可选，默认为`API`)
-
-可用的 Trigger 类型：
-`DEFAULT`, `API`, `ATTACK`, `BOW_HIT`, `BLOCK`, `BLOCK_PLACE`, `BLOCK_BREAK`,
-`COMBAT`, `CONSUME`, `CROUCH`, `UNCROUCH`, `DAMAGED`, `DROPCOMBAT`, `DEATH`,
-`DESPAWNED`, `ENTERCOMBAT`, `EXPLODE`, `INTERACT`, `KILL`, `KILLPLAYER`,
-`PLAYERDEATH`, `SHOOT`, `SIGNAL`, `SPAWN`, `SPLASH_POTION`, `SWING`, `TARGETCHANGE`,
-`TARGETED`, `TELEPORT`, `TIMER`, `USE`, `RIGHTCLICK`, `READY`, `CAST`, `FISH`,
-`FISH_BITE`, `FISH_CATCH_FISH`, `FISH_CATCH_ENTITY`, `FISH_GROUND`, `FISH_REEL`,
-`FISH_FAIL`, `TAME`, `TAME_FAIL`, `TRIDENT_THROW`, `TRIDENT_HIT`, `CUSTOM`
+2. with power
 
 #### 作用
 
@@ -1569,6 +1576,6 @@ a 赋值为 false
 
 #### 例子
 
-`mmskill 'ExampleSkill' with API`
+`mmskill 'ExampleSkill' with 1.5`
 
 ---
