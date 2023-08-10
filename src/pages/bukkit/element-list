@@ -1,0 +1,213 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:net.md_5.bungee.api.chat/ClickEvent.Action///PointingToDeclaration/net/md_5/bungee/api/chat/ClickEvent.Action.html
+$dokka.location:net.md_5.bungee.api.chat/ComponentBuilder.FormatRetention///PointingToDeclaration/net/md_5/bungee/api/chat/ComponentBuilder.FormatRetention.html
+$dokka.location:net.md_5.bungee.api.chat/ComponentBuilder.Joiner///PointingToDeclaration/net/md_5/bungee/api/chat/ComponentBuilder.Joiner.html
+$dokka.location:net.md_5.bungee.api.chat/HoverEvent.Action///PointingToDeclaration/net/md_5/bungee/api/chat/HoverEvent.Action.html
+$dokka.location:net.md_5.bungee.api.chat/ItemTag.Serializer///PointingToDeclaration/net/md_5/bungee/api/chat/ItemTag.Serializer.html
+$dokka.location:org.bukkit.attribute/AttributeModifier.Operation///PointingToDeclaration/org/bukkit/attribute/AttributeModifier.Operation.html
+$dokka.location:org.bukkit.block.data.type/Bamboo.Leaves///PointingToDeclaration/org/bukkit/block/data/type/Bamboo.Leaves.html
+$dokka.location:org.bukkit.block.data.type/Bed.Part///PointingToDeclaration/org/bukkit/block/data/type/Bed.Part.html
+$dokka.location:org.bukkit.block.data.type/Bell.Attachment///PointingToDeclaration/org/bukkit/block/data/type/Bell.Attachment.html
+$dokka.location:org.bukkit.block.data.type/BigDripleaf.Tilt///PointingToDeclaration/org/bukkit/block/data/type/BigDripleaf.Tilt.html
+$dokka.location:org.bukkit.block.data.type/Chest.Type///PointingToDeclaration/org/bukkit/block/data/type/Chest.Type.html
+$dokka.location:org.bukkit.block.data.type/Comparator.Mode///PointingToDeclaration/org/bukkit/block/data/type/Comparator.Mode.html
+$dokka.location:org.bukkit.block.data.type/Door.Hinge///PointingToDeclaration/org/bukkit/block/data/type/Door.Hinge.html
+$dokka.location:org.bukkit.block.data.type/Jigsaw.Orientation///PointingToDeclaration/org/bukkit/block/data/type/Jigsaw.Orientation.html
+$dokka.location:org.bukkit.block.data.type/PointedDripstone.Thickness///PointingToDeclaration/org/bukkit/block/data/type/PointedDripstone.Thickness.html
+$dokka.location:org.bukkit.block.data.type/RedstoneWire.Connection///PointingToDeclaration/org/bukkit/block/data/type/RedstoneWire.Connection.html
+$dokka.location:org.bukkit.block.data.type/SculkSensor.Phase///PointingToDeclaration/org/bukkit/block/data/type/SculkSensor.Phase.html
+$dokka.location:org.bukkit.block.data.type/Slab.Type///PointingToDeclaration/org/bukkit/block/data/type/Slab.Type.html
+$dokka.location:org.bukkit.block.data.type/Stairs.Shape///PointingToDeclaration/org/bukkit/block/data/type/Stairs.Shape.html
+$dokka.location:org.bukkit.block.data.type/StructureBlock.Mode///PointingToDeclaration/org/bukkit/block/data/type/StructureBlock.Mode.html
+$dokka.location:org.bukkit.block.data.type/Switch.Face///PointingToDeclaration/org/bukkit/block/data/type/Switch.Face.html
+$dokka.location:org.bukkit.block.data.type/TechnicalPiston.Type///PointingToDeclaration/org/bukkit/block/data/type/TechnicalPiston.Type.html
+$dokka.location:org.bukkit.block.data.type/Wall.Height///PointingToDeclaration/org/bukkit/block/data/type/Wall.Height.html
+$dokka.location:org.bukkit.block.data/Bisected.Half///PointingToDeclaration/org/bukkit/block/data/Bisected.Half.html
+$dokka.location:org.bukkit.block.data/FaceAttachable.AttachedFace///PointingToDeclaration/org/bukkit/block/data/FaceAttachable.AttachedFace.html
+$dokka.location:org.bukkit.block.data/Rail.Shape///PointingToDeclaration/org/bukkit/block/data/Rail.Shape.html
+$dokka.location:org.bukkit.boss/DragonBattle.RespawnPhase///PointingToDeclaration/org/bukkit/boss/DragonBattle.RespawnPhase.html
+$dokka.location:org.bukkit.command/CommandSender.Spigot///PointingToDeclaration/org/bukkit/command/CommandSender.Spigot.html
+$dokka.location:org.bukkit.conversations/Conversation.ConversationState///PointingToDeclaration/org/bukkit/conversations/Conversation.ConversationState.html
+$dokka.location:org.bukkit.entity/AbstractArrow.PickupStatus///PointingToDeclaration/org/bukkit/entity/AbstractArrow.PickupStatus.html
+$dokka.location:org.bukkit.entity/ArmorStand.LockType///PointingToDeclaration/org/bukkit/entity/ArmorStand.LockType.html
+$dokka.location:org.bukkit.entity/Axolotl.Variant///PointingToDeclaration/org/bukkit/entity/Axolotl.Variant.html
+$dokka.location:org.bukkit.entity/Boat.Status///PointingToDeclaration/org/bukkit/entity/Boat.Status.html
+$dokka.location:org.bukkit.entity/Boat.Type///PointingToDeclaration/org/bukkit/entity/Boat.Type.html
+$dokka.location:org.bukkit.entity/Cat.Type///PointingToDeclaration/org/bukkit/entity/Cat.Type.html
+$dokka.location:org.bukkit.entity/Display.Billboard///PointingToDeclaration/org/bukkit/entity/Display.Billboard.html
+$dokka.location:org.bukkit.entity/Display.Brightness///PointingToDeclaration/org/bukkit/entity/Display.Brightness.html
+$dokka.location:org.bukkit.entity/EnderDragon.Phase///PointingToDeclaration/org/bukkit/entity/EnderDragon.Phase.html
+$dokka.location:org.bukkit.entity/Entity.Spigot///PointingToDeclaration/org/bukkit/entity/Entity.Spigot.html
+$dokka.location:org.bukkit.entity/Evoker.Spell///PointingToDeclaration/org/bukkit/entity/Evoker.Spell.html
+$dokka.location:org.bukkit.entity/FishHook.HookState///PointingToDeclaration/org/bukkit/entity/FishHook.HookState.html
+$dokka.location:org.bukkit.entity/Fox.Type///PointingToDeclaration/org/bukkit/entity/Fox.Type.html
+$dokka.location:org.bukkit.entity/Frog.Variant///PointingToDeclaration/org/bukkit/entity/Frog.Variant.html
+$dokka.location:org.bukkit.entity/Horse.Color///PointingToDeclaration/org/bukkit/entity/Horse.Color.html
+$dokka.location:org.bukkit.entity/Horse.Style///PointingToDeclaration/org/bukkit/entity/Horse.Style.html
+$dokka.location:org.bukkit.entity/Horse.Variant///PointingToDeclaration/org/bukkit/entity/Horse.Variant.html
+$dokka.location:org.bukkit.entity/Interaction.PreviousInteraction///PointingToDeclaration/org/bukkit/entity/Interaction.PreviousInteraction.html
+$dokka.location:org.bukkit.entity/ItemDisplay.ItemDisplayTransform///PointingToDeclaration/org/bukkit/entity/ItemDisplay.ItemDisplayTransform.html
+$dokka.location:org.bukkit.entity/LightningStrike.Spigot///PointingToDeclaration/org/bukkit/entity/LightningStrike.Spigot.html
+$dokka.location:org.bukkit.entity/Llama.Color///PointingToDeclaration/org/bukkit/entity/Llama.Color.html
+$dokka.location:org.bukkit.entity/MushroomCow.Variant///PointingToDeclaration/org/bukkit/entity/MushroomCow.Variant.html
+$dokka.location:org.bukkit.entity/Ocelot.Type///PointingToDeclaration/org/bukkit/entity/Ocelot.Type.html
+$dokka.location:org.bukkit.entity/Panda.Gene///PointingToDeclaration/org/bukkit/entity/Panda.Gene.html
+$dokka.location:org.bukkit.entity/Parrot.Variant///PointingToDeclaration/org/bukkit/entity/Parrot.Variant.html
+$dokka.location:org.bukkit.entity/Player.Spigot///PointingToDeclaration/org/bukkit/entity/Player.Spigot.html
+$dokka.location:org.bukkit.entity/Rabbit.Type///PointingToDeclaration/org/bukkit/entity/Rabbit.Type.html
+$dokka.location:org.bukkit.entity/Skeleton.SkeletonType///PointingToDeclaration/org/bukkit/entity/Skeleton.SkeletonType.html
+$dokka.location:org.bukkit.entity/Sniffer.State///PointingToDeclaration/org/bukkit/entity/Sniffer.State.html
+$dokka.location:org.bukkit.entity/Spellcaster.Spell///PointingToDeclaration/org/bukkit/entity/Spellcaster.Spell.html
+$dokka.location:org.bukkit.entity/TextDisplay.TextAlignment///PointingToDeclaration/org/bukkit/entity/TextDisplay.TextAlignment.html
+$dokka.location:org.bukkit.entity/TropicalFish.Pattern///PointingToDeclaration/org/bukkit/entity/TropicalFish.Pattern.html
+$dokka.location:org.bukkit.entity/Villager.Profession///PointingToDeclaration/org/bukkit/entity/Villager.Profession.html
+$dokka.location:org.bukkit.entity/Villager.Type///PointingToDeclaration/org/bukkit/entity/Villager.Type.html
+$dokka.location:org.bukkit.entity/Warden.AngerLevel///PointingToDeclaration/org/bukkit/entity/Warden.AngerLevel.html
+$dokka.location:org.bukkit.entity/Wither.Head///PointingToDeclaration/org/bukkit/entity/Wither.Head.html
+$dokka.location:org.bukkit.event.block/BlockIgniteEvent.IgniteCause///PointingToDeclaration/org/bukkit/event/block/BlockIgniteEvent.IgniteCause.html
+$dokka.location:org.bukkit.event.block/CauldronLevelChangeEvent.ChangeReason///PointingToDeclaration/org/bukkit/event/block/CauldronLevelChangeEvent.ChangeReason.html
+$dokka.location:org.bukkit.event.block/TNTPrimeEvent.PrimeCause///PointingToDeclaration/org/bukkit/event/block/TNTPrimeEvent.PrimeCause.html
+$dokka.location:org.bukkit.event.entity/CreatureSpawnEvent.SpawnReason///PointingToDeclaration/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+$dokka.location:org.bukkit.event.entity/CreeperPowerEvent.PowerCause///PointingToDeclaration/org/bukkit/event/entity/CreeperPowerEvent.PowerCause.html
+$dokka.location:org.bukkit.event.entity/EntityDamageEvent.DamageCause///PointingToDeclaration/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+$dokka.location:org.bukkit.event.entity/EntityDamageEvent.DamageModifier///PointingToDeclaration/org/bukkit/event/entity/EntityDamageEvent.DamageModifier.html
+$dokka.location:org.bukkit.event.entity/EntityExhaustionEvent.ExhaustionReason///PointingToDeclaration/org/bukkit/event/entity/EntityExhaustionEvent.ExhaustionReason.html
+$dokka.location:org.bukkit.event.entity/EntityPotionEffectEvent.Action///PointingToDeclaration/org/bukkit/event/entity/EntityPotionEffectEvent.Action.html
+$dokka.location:org.bukkit.event.entity/EntityPotionEffectEvent.Cause///PointingToDeclaration/org/bukkit/event/entity/EntityPotionEffectEvent.Cause.html
+$dokka.location:org.bukkit.event.entity/EntityRegainHealthEvent.RegainReason///PointingToDeclaration/org/bukkit/event/entity/EntityRegainHealthEvent.RegainReason.html
+$dokka.location:org.bukkit.event.entity/EntityTargetEvent.TargetReason///PointingToDeclaration/org/bukkit/event/entity/EntityTargetEvent.TargetReason.html
+$dokka.location:org.bukkit.event.entity/EntityTransformEvent.TransformReason///PointingToDeclaration/org/bukkit/event/entity/EntityTransformEvent.TransformReason.html
+$dokka.location:org.bukkit.event.entity/EntityUnleashEvent.UnleashReason///PointingToDeclaration/org/bukkit/event/entity/EntityUnleashEvent.UnleashReason.html
+$dokka.location:org.bukkit.event.entity/VillagerCareerChangeEvent.ChangeReason///PointingToDeclaration/org/bukkit/event/entity/VillagerCareerChangeEvent.ChangeReason.html
+$dokka.location:org.bukkit.event.hanging/HangingBreakEvent.RemoveCause///PointingToDeclaration/org/bukkit/event/hanging/HangingBreakEvent.RemoveCause.html
+$dokka.location:org.bukkit.event.inventory/HopperInventorySearchEvent.ContainerType///PointingToDeclaration/org/bukkit/event/inventory/HopperInventorySearchEvent.ContainerType.html
+$dokka.location:org.bukkit.event.inventory/InventoryType.SlotType///PointingToDeclaration/org/bukkit/event/inventory/InventoryType.SlotType.html
+$dokka.location:org.bukkit.event.player/AsyncPlayerPreLoginEvent.Result///PointingToDeclaration/org/bukkit/event/player/AsyncPlayerPreLoginEvent.Result.html
+$dokka.location:org.bukkit.event.player/PlayerBedEnterEvent.BedEnterResult///PointingToDeclaration/org/bukkit/event/player/PlayerBedEnterEvent.BedEnterResult.html
+$dokka.location:org.bukkit.event.player/PlayerExpCooldownChangeEvent.ChangeReason///PointingToDeclaration/org/bukkit/event/player/PlayerExpCooldownChangeEvent.ChangeReason.html
+$dokka.location:org.bukkit.event.player/PlayerFishEvent.State///PointingToDeclaration/org/bukkit/event/player/PlayerFishEvent.State.html
+$dokka.location:org.bukkit.event.player/PlayerLoginEvent.Result///PointingToDeclaration/org/bukkit/event/player/PlayerLoginEvent.Result.html
+$dokka.location:org.bukkit.event.player/PlayerPreLoginEvent.Result///PointingToDeclaration/org/bukkit/event/player/PlayerPreLoginEvent.Result.html
+$dokka.location:org.bukkit.event.player/PlayerResourcePackStatusEvent.Status///PointingToDeclaration/org/bukkit/event/player/PlayerResourcePackStatusEvent.Status.html
+$dokka.location:org.bukkit.event.player/PlayerRespawnEvent.RespawnReason///PointingToDeclaration/org/bukkit/event/player/PlayerRespawnEvent.RespawnReason.html
+$dokka.location:org.bukkit.event.player/PlayerSpawnChangeEvent.Cause///PointingToDeclaration/org/bukkit/event/player/PlayerSpawnChangeEvent.Cause.html
+$dokka.location:org.bukkit.event.player/PlayerTeleportEvent.TeleportCause///PointingToDeclaration/org/bukkit/event/player/PlayerTeleportEvent.TeleportCause.html
+$dokka.location:org.bukkit.event.raid/RaidStopEvent.Reason///PointingToDeclaration/org/bukkit/event/raid/RaidStopEvent.Reason.html
+$dokka.location:org.bukkit.event.server/ServerLoadEvent.LoadType///PointingToDeclaration/org/bukkit/event/server/ServerLoadEvent.LoadType.html
+$dokka.location:org.bukkit.event.weather/LightningStrikeEvent.Cause///PointingToDeclaration/org/bukkit/event/weather/LightningStrikeEvent.Cause.html
+$dokka.location:org.bukkit.event.world/PortalCreateEvent.CreateReason///PointingToDeclaration/org/bukkit/event/world/PortalCreateEvent.CreateReason.html
+$dokka.location:org.bukkit.event.world/TimeSkipEvent.SkipReason///PointingToDeclaration/org/bukkit/event/world/TimeSkipEvent.SkipReason.html
+$dokka.location:org.bukkit.event/Event.Result///PointingToDeclaration/org/bukkit/event/Event.Result.html
+$dokka.location:org.bukkit.generator/ChunkGenerator.BiomeGrid///PointingToDeclaration/org/bukkit/generator/ChunkGenerator.BiomeGrid.html
+$dokka.location:org.bukkit.generator/ChunkGenerator.ChunkData///PointingToDeclaration/org/bukkit/generator/ChunkGenerator.ChunkData.html
+$dokka.location:org.bukkit.help/HelpTopicComparator.TopicNameComparator///PointingToDeclaration/org/bukkit/help/HelpTopicComparator.TopicNameComparator.html
+$dokka.location:org.bukkit.inventory.meta.tags/ItemTagType.PrimitiveTagType///PointingToDeclaration/org/bukkit/inventory/meta/tags/ItemTagType.PrimitiveTagType.html
+$dokka.location:org.bukkit.inventory.meta/BookMeta.Generation///PointingToDeclaration/org/bukkit/inventory/meta/BookMeta.Generation.html
+$dokka.location:org.bukkit.inventory.meta/BookMeta.Spigot///PointingToDeclaration/org/bukkit/inventory/meta/BookMeta.Spigot.html
+$dokka.location:org.bukkit.inventory/InventoryView.Property///PointingToDeclaration/org/bukkit/inventory/InventoryView.Property.html
+$dokka.location:org.bukkit.inventory/RecipeChoice.ExactChoice///PointingToDeclaration/org/bukkit/inventory/RecipeChoice.ExactChoice.html
+$dokka.location:org.bukkit.inventory/RecipeChoice.MaterialChoice///PointingToDeclaration/org/bukkit/inventory/RecipeChoice.MaterialChoice.html
+$dokka.location:org.bukkit.loot/LootContext.Builder///PointingToDeclaration/org/bukkit/loot/LootContext.Builder.html
+$dokka.location:org.bukkit.map/MapCursor.Type///PointingToDeclaration/org/bukkit/map/MapCursor.Type.html
+$dokka.location:org.bukkit.map/MapFont.CharacterSprite///PointingToDeclaration/org/bukkit/map/MapFont.CharacterSprite.html
+$dokka.location:org.bukkit.map/MapPalette.MapColorCache///PointingToDeclaration/org/bukkit/map/MapPalette.MapColorCache.html
+$dokka.location:org.bukkit.map/MapView.Scale///PointingToDeclaration/org/bukkit/map/MapView.Scale.html
+$dokka.location:org.bukkit.material/CocoaPlant.CocoaPlantSize///PointingToDeclaration/org/bukkit/material/CocoaPlant.CocoaPlantSize.html
+$dokka.location:org.bukkit.metadata/LazyMetadataValue.CacheStrategy///PointingToDeclaration/org/bukkit/metadata/LazyMetadataValue.CacheStrategy.html
+$dokka.location:org.bukkit.packs/DataPack.Compatibility///PointingToDeclaration/org/bukkit/packs/DataPack.Compatibility.html
+$dokka.location:org.bukkit.packs/DataPack.Source///PointingToDeclaration/org/bukkit/packs/DataPack.Source.html
+$dokka.location:org.bukkit.persistence/PersistentDataType.BooleanPersistentDataType///PointingToDeclaration/org/bukkit/persistence/PersistentDataType.BooleanPersistentDataType.html
+$dokka.location:org.bukkit.persistence/PersistentDataType.PrimitivePersistentDataType///PointingToDeclaration/org/bukkit/persistence/PersistentDataType.PrimitivePersistentDataType.html
+$dokka.location:org.bukkit.plugin/PluginAwareness.Flags///PointingToDeclaration/org/bukkit/plugin/PluginAwareness.Flags.html
+$dokka.location:org.bukkit.profile/PlayerTextures.SkinModel///PointingToDeclaration/org/bukkit/profile/PlayerTextures.SkinModel.html
+$dokka.location:org.bukkit.scoreboard/Team.Option///PointingToDeclaration/org/bukkit/scoreboard/Team.Option.html
+$dokka.location:org.bukkit.scoreboard/Team.OptionStatus///PointingToDeclaration/org/bukkit/scoreboard/Team.OptionStatus.html
+$dokka.location:org.bukkit.util/ChatPaginator.ChatPage///PointingToDeclaration/org/bukkit/util/ChatPaginator.ChatPage.html
+$dokka.location:org.bukkit/BanList.Type///PointingToDeclaration/org/bukkit/BanList.Type.html
+$dokka.location:org.bukkit/Chunk.LoadLevel///PointingToDeclaration/org/bukkit/Chunk.LoadLevel.html
+$dokka.location:org.bukkit/Effect.Type///PointingToDeclaration/org/bukkit/Effect.Type.html
+$dokka.location:org.bukkit/FireworkEffect.Builder///PointingToDeclaration/org/bukkit/FireworkEffect.Builder.html
+$dokka.location:org.bukkit/FireworkEffect.Type///PointingToDeclaration/org/bukkit/FireworkEffect.Type.html
+$dokka.location:org.bukkit/Note.Tone///PointingToDeclaration/org/bukkit/Note.Tone.html
+$dokka.location:org.bukkit/Particle.DustOptions///PointingToDeclaration/org/bukkit/Particle.DustOptions.html
+$dokka.location:org.bukkit/Particle.DustTransition///PointingToDeclaration/org/bukkit/Particle.DustTransition.html
+$dokka.location:org.bukkit/Raid.RaidStatus///PointingToDeclaration/org/bukkit/Raid.RaidStatus.html
+$dokka.location:org.bukkit/Registry.SimpleRegistry///PointingToDeclaration/org/bukkit/Registry.SimpleRegistry.html
+$dokka.location:org.bukkit/Server.Spigot///PointingToDeclaration/org/bukkit/Server.Spigot.html
+$dokka.location:org.bukkit/Statistic.Type///PointingToDeclaration/org/bukkit/Statistic.Type.html
+$dokka.location:org.bukkit/Vibration.Destination.BlockDestination///PointingToDeclaration/org/bukkit/Vibration.Destination.BlockDestination.html
+$dokka.location:org.bukkit/Vibration.Destination.EntityDestination///PointingToDeclaration/org/bukkit/Vibration.Destination.EntityDestination.html
+$dokka.location:org.bukkit/Vibration.Destination///PointingToDeclaration/org/bukkit/Vibration.Destination.html
+$dokka.location:org.bukkit/Warning.WarningState///PointingToDeclaration/org/bukkit/Warning.WarningState.html
+$dokka.location:org.bukkit/World.Environment///PointingToDeclaration/org/bukkit/World.Environment.html
+$dokka.location:org.bukkit/World.Spigot///PointingToDeclaration/org/bukkit/World.Spigot.html
+net.md_5.bungee.api
+net.md_5.bungee.api.chat
+net.md_5.bungee.api.chat.hover.content
+net.md_5.bungee.chat
+org.bukkit
+org.bukkit.advancement
+org.bukkit.attribute
+org.bukkit.block
+org.bukkit.block.banner
+org.bukkit.block.data
+org.bukkit.block.data.type
+org.bukkit.block.sign
+org.bukkit.block.structure
+org.bukkit.boss
+org.bukkit.command
+org.bukkit.command.defaults
+org.bukkit.configuration
+org.bukkit.configuration.file
+org.bukkit.configuration.serialization
+org.bukkit.conversations
+org.bukkit.enchantments
+org.bukkit.entity
+org.bukkit.entity.memory
+org.bukkit.entity.minecart
+org.bukkit.event
+org.bukkit.event.block
+org.bukkit.event.enchantment
+org.bukkit.event.entity
+org.bukkit.event.hanging
+org.bukkit.event.inventory
+org.bukkit.event.player
+org.bukkit.event.raid
+org.bukkit.event.server
+org.bukkit.event.vehicle
+org.bukkit.event.weather
+org.bukkit.event.world
+org.bukkit.generator
+org.bukkit.generator.structure
+org.bukkit.help
+org.bukkit.inventory
+org.bukkit.inventory.meta
+org.bukkit.inventory.meta.tags
+org.bukkit.inventory.meta.trim
+org.bukkit.inventory.recipe
+org.bukkit.loot
+org.bukkit.map
+org.bukkit.material
+org.bukkit.material.types
+org.bukkit.metadata
+org.bukkit.packs
+org.bukkit.permissions
+org.bukkit.persistence
+org.bukkit.plugin
+org.bukkit.plugin.java
+org.bukkit.plugin.messaging
+org.bukkit.potion
+org.bukkit.profile
+org.bukkit.projectiles
+org.bukkit.scheduler
+org.bukkit.scoreboard
+org.bukkit.structure
+org.bukkit.util
+org.bukkit.util.io
+org.bukkit.util.noise
+org.bukkit.util.permissions
+org.spigotmc
+org.spigotmc.event.entity
+org.spigotmc.event.player
+
